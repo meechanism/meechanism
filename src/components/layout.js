@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import Sidebar from "./layout/sidebar"
 
 class Layout extends React.Component {

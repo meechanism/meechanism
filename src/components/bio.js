@@ -35,11 +35,12 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              Written by <strong>{author}</strong> who is probably twiddling her
+              thumbs wondering what's next on the menu.
               {` `}
-              <a href={`${social.instagram}`}>Instagram</a> |
-              <a href={`${social.github}`}>Github</a>
+              <a href={`${social.github}`}>Github</a> |
+              <a href={`${social.linkedin}`}>LinkedIn</a> |
+              <a href={`${social.instagram}`}>Instagram</a>
             </p>
           </Container>
         )
@@ -63,6 +64,7 @@ const bioQuery = graphql`
         social {
           github
           instagram
+          linkedin
         }
       }
     }

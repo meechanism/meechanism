@@ -1,9 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
+
+const Wrapper = styled.div``
 
 class IndexPage extends React.Component {
   render() {
@@ -16,21 +19,16 @@ class IndexPage extends React.Component {
           keywords={[`Mee Cha`, `frontend`, `full-stack developer`, `Hmong`]}
         />
 
-        <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
-        </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
-        <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
-        </p>
-        <p>Now go build something great!</p>
-        <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
-        </Link>
+        <Wrapper>
+          <h1>Oh hi</h1>
+          <p>Didn't see you there.</p>
+          <Link to="/blog/">
+            <Button marginTop="35px">Looking to read?</Button>
+          </Link>
+          <Link to="/projects/">
+            <Button marginTop="35px">See some stuff?</Button>
+          </Link>
+        </Wrapper>
       </Layout>
     )
   }

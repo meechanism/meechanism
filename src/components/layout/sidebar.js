@@ -1,6 +1,8 @@
 import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Image from "gatsby-image"
 
 import { rhythm } from "../../utils/typography"
 import { NavItem, Nav } from "../nav"
@@ -22,48 +24,67 @@ const Branding = styled.div`
   justify-content: center;
   box-shadow: 0;
   border: 0;
-  img {
-    width: ${rhythm(9)};
-    opacity: 1;
-    transition: opacity 0.5s ease;
-    &:hover {
-      opacity: 0.5;
-    }
-  }
 `
 
 export const Sidebar = () => {
   return (
-    <Wrapper>
-      <Link to="/">
-        <Branding>
-          <img
-            style={{ margin: 0 }}
-            src="/mee-cha-logo.png"
-            alt="Mee Cha logo"
-          />
-        </Branding>
-      </Link>
+    <StaticQuery
+      query={sidebarQuery}
+      render={data => {
+        const { logo, author } = data
+        return (
+          <Wrapper>
+            <Link to="/">
+              <Branding>
+                <Image
+                  fixed={logo.childImageSharp.fixed}
+                  alt={author}
+                  style={{
+                    margin: 0,
+                  }}
+                />
+              </Branding>
+            </Link>
 
-      <Nav>
-        <Link to="/about/">
-          <NavItem>About</NavItem>
-        </Link>
+            <Nav>
+              <Link to="/about/">
+                <NavItem>About</NavItem>
+              </Link>
 
-        <Link to="/projects/">
-          <NavItem>Projects</NavItem>
-        </Link>
+              <Link to="/projects/">
+                <NavItem>Projects</NavItem>
+              </Link>
 
-        <Link to="/blog/">
-          <NavItem>Articles</NavItem>
-        </Link>
+              <Link to="/blog/">
+                <NavItem>Articles</NavItem>
+              </Link>
 
-        <Link to="/contact/">
-          <NavItem>Contact</NavItem>
-        </Link>
-      </Nav>
-    </Wrapper>
+              <Link to="/contact/">
+                <NavItem>Contact</NavItem>
+              </Link>
+            </Nav>
+          </Wrapper>
+        )
+      }}
+    />
   )
 }
+
+const sidebarQuery = graphql`
+  query SidebarQuery {
+    logo: file(absolutePath: { regex: "/mee-cha-logo.png/" }) {
+      childImageSharp {
+        fixed(width: 250) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        author
+      }
+    }
+  }
+`
 
 export default Sidebar

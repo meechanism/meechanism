@@ -5,8 +5,10 @@ module.exports = {
     description: `Digital dump of a Hmong-American frontend engineer`,
     siteUrl: `https://hopeful-ramanujan-7b1b8d.netlify.com/`,
     social: {
-      instagram: "https://www.instagram.com/meechanism/",
+      email: "mee.cha.nism@gmail.com",
+      instagram: "https://www.instagram.com/meechanism",
       github: "https://github.com/meechanism",
+      linkedin: "https://www.linkedin.com/in/meecha",
     },
   },
   plugins: [
