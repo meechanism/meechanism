@@ -3,7 +3,7 @@
   Mee's personal website
 </h1>
 
-This starter is a fork of Gatsby Starter Blog, the most popular starter by far – with second place being Gatsby Starter Netlify CMS. So I decided to combine the 2!
+Built with: Gatsby, React, Styled Components, and Netlify CMS.
 
 ## 🚀 Quick start
 
@@ -21,3 +21,7 @@ This starter is a fork of Gatsby Starter Blog, the most popular starter by far �
     ```sh
     $ npm start
     ```
+
+## Deployment
+
+This repo is setup to auto deploy from master branch with Netlify.
