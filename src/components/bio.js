@@ -12,6 +12,7 @@ import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
 
+// Useful for blog posts
 function Bio() {
   return (
     <StaticQuery
@@ -37,9 +38,8 @@ function Bio() {
               Written by <strong>{author}</strong> who lives and works in San
               Francisco building useful things.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
+              <a href={`${social.instagram}`}>Instagram</a> |
+              <a href={`${social.github}`}>Github</a>
             </p>
           </Container>
         )
@@ -50,7 +50,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/profile-pic.jpeg/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed
@@ -61,7 +61,8 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          github
+          instagram
         }
       }
     }
