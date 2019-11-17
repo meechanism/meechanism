@@ -1,8 +1,19 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 import { rhythm } from "../utils/typography"
 import Sidebar from "./layout/sidebar"
+
+const GlobalStyle = createGlobalStyle`
+ .gatsby-resp-image-image,
+ .gatsby-resp-image-background-image {
+   border-radius: 4px;
+   margin-bottom: 12px;
+ }
+  figcaption {
+    text-align: center;
+  }
+`
 
 class Layout extends React.Component {
   render() {
@@ -54,6 +65,7 @@ class Layout extends React.Component {
     // }
     return (
       <Wrapper>
+        <GlobalStyle />
         <Sidebar />
         <Container>
           {/* <header>{header}</header> */}

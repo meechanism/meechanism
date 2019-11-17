@@ -51,12 +51,12 @@ export const Sidebar = () => {
                 <NavItem>About</NavItem>
               </Link>
 
-              <Link to="/projects/">
-                <NavItem>Projects</NavItem>
+              <Link to="/blog/">
+                <NavItem>Blog</NavItem>
               </Link>
 
-              <Link to="/blog/">
-                <NavItem>Articles</NavItem>
+              <Link to="/projects/">
+                <NavItem>Projects</NavItem>
               </Link>
 
               <Link to="/contact/">

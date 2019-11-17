@@ -7,7 +7,12 @@ description: "Some new terminology I encountered while prepping for my next trip
 I have a trip planned to explore more of the Scottish Highlands next year (2020). I've been itching to return
 because my last trip was only several days, but I fell in love.
 
-Ever since my last trip there,
+<figure>
+  <img src="./glencoe.jpg" alt="Glencoe">
+  <figcaption>Me admiring the beauty of Glencoe, Dec 2017</figcaption>
+</figure>
+
+Ever since my last trip in Dec 2017,
 I've come to appreciate and embrace the wealth of knowledge the locals provide. I used to have a bad attitude about
 tourism as it can cause congestion and cripple communities and the environment, so I'm expanding my travels with
 [eco-tourism](https://en.wikipedia.org/wiki/Ecotourism) in mind.
