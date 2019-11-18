@@ -1,19 +1,9 @@
 import React from "react"
-import styled, { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
 import Sidebar from "./layout/sidebar"
-
-const GlobalStyle = createGlobalStyle`
- .gatsby-resp-image-image,
- .gatsby-resp-image-background-image {
-   border-radius: 4px;
-   margin-bottom: 12px;
- }
-  figcaption {
-    text-align: center;
-  }
-`
+import GlobalStyle from "./globalStyles"
 
 class Layout extends React.Component {
   render() {

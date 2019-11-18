@@ -12,7 +12,7 @@ have a studio or permanent workspace at home, so I like the format of a watercol
 
 However, there came a point when they didn't have the colors I wanted.
 
-I found myself popping out two or more palettes just so I can use several colors
+I found myself popping out two or more palettes just so I could use several colors
 from each, and did some swapping. I also didn't have a good range of colors to let
 alone use, but mix. It was just a bit frustrating. I realized maybe what
 I needed was a generic palette filled with colors I most often use and are versatile enough to mix new colors.
@@ -30,12 +30,12 @@ my first set of watercolor tubes though [Blick](https://www.dickblick.com/).
 
 The final list consists of [Winsor & Newton Professional Watercolor Tubes](https://www.dickblick.com/products/winsor-and-newton-professional-watercolor-tubes/),
 but note I'm no brand loyalist (at this point). Pick brands that meet your
-criteria and fit your budget! Also note that brands may use the same color name,
-but may have a different pigment recipe (eg: the colors will look slightly different!)
+criteria and fit your budget! Also, note that brands may use the same color name,
+but may have a different pigment recipe (e.g.,: the colors will look slightly different!)
 Look on the back of the tubes or read the details from the manufacturer's website
 if you want to compare.
 
-The following were my choices for my first palette. I got 12 tubes of 5ml each
+The following were my choices for my first palette. I got 12 tubes of 5 ml each
 and they all vary in price (~ \$5-9 USD) depending on the pigment.
 
 |                                                                                                                                        |                                                                                                                                            |
@@ -64,7 +64,7 @@ When browsing, the reviews varied far and wide, and since this was on the cheape
 end, I didn't really have high expectations. It is a cute pastel pink and the
 brand has part of my name in it. :B The lid doesn't close evenly, so one corner
 if always poking a bit higher, but I'm okay with that for the price. This tin
-did come with 24 pans, but as you can see in the photo, I only have half of it
+came with 24 pans, but as you can see in the photo, I only have half of it
 filled at this moment.
 
 ![Watercolor palette close up](./assets/watercolor-tin2.jpg)

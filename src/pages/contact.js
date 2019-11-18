@@ -57,7 +57,7 @@ class IndexPage extends React.Component {
                   {Object.keys(social).map(currSocial => (
                     <li key={currSocial}>
                       <SocialName>{currSocial}: </SocialName>
-                      <Link to={social[currSocial]}>{social[currSocial]}</Link>
+                      <a href={social[currSocial]}>{social[currSocial]}</a>
                     </li>
                   ))}
                 </ul>
