@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import Colors from "../components/colors"
+import { rhythm, scale } from "../utils/typography"
 
 export default createGlobalStyle`
   a {
@@ -12,6 +13,7 @@ export default createGlobalStyle`
   }
   figcaption {
     text-align: center;
+    font-size: ${rhythm(0.5)};
   }
 
   h1, h2, h3,h4, h5, h6 {
