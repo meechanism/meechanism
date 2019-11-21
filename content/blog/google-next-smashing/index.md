@@ -1,6 +1,7 @@
 ---
 title: Learnings from 2019 Google Next and SmashingConf SF
 date: "2019-04-23T22:12:03.284Z"
+project: code
 ---
 
 I had the opportunity to attend Google NEXT and SmashingConf SF 2019. Both were in San Francisco, CA and within weeks of each other, so I dub this the Month of Conferences and Learning. Both were multiple days and packed with dense talks.

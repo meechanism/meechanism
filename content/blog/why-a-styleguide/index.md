@@ -1,6 +1,7 @@
 ---
 title: Why a style guide
 date: "2018-09-14T22:12:03.284Z"
+project: code
 ---
 
 When I joined the Customer Experience team to build a new component library, we quickly found a need to publish a style guide. What is it, you ask? I will cover what it is and why we needed one!
