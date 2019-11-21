@@ -61,4 +61,9 @@ The following problems list actual examples the team faced. The type of problem 
 
 Various leads from different teams came together once a week to align matters, discuss, and resolve any problems. It turns out many issues exist because of the sheer lack of communication.
 
+<figure>
+  <img src="./teamwork.jpg" alt="Group of people working on laptops">
+  <figcaption>A team working on problems together. Photo by <a href="https://www.pexels.com/@daria">@daria</a></figcaption>
+</figure>
+
 If your team is experiencing similar types of issues or problems above, I do recommend getting people together to acknowledge the existence of said problems. Talking is the first step.
