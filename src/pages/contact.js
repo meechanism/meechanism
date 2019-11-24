@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -31,57 +31,47 @@ const Email = () => {
     </>
   )
 }
-class IndexPage extends React.Component {
-  render() {
-    const siteTitle = "Oh hi"
 
-    return (
-      <StaticQuery
-        query={contactQuery}
-        render={data => {
-          const { site } = data
-          const { siteMetadata } = site
-          const { social } = siteMetadata
-
-          return (
-            <Layout location={this.props.location} title={siteTitle}>
-              <SEO title="Contact" />
-
-              <Wrapper>
-                <h1>Contact</h1>
-                <p>Need to get in touch with me?</p>
-                <ul>
-                  <li>
-                    <SocialName>Email: </SocialName> <Email />
-                  </li>
-                  {Object.keys(social).map(currSocial => (
-                    <li key={currSocial}>
-                      <SocialName>{currSocial}: </SocialName>
-                      <a href={social[currSocial]}>{social[currSocial]}</a>
-                    </li>
-                  ))}
-                </ul>
-              </Wrapper>
-            </Layout>
-          )
-        }}
-      />
-    )
-  }
-}
-
-const contactQuery = graphql`
-  query ContactQuery {
-    site {
-      siteMetadata {
-        social {
-          linkedin
-          github
-          instagram
+const Contact = ({ location }) => {
+  const siteTitle = "Oh hi"
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          social {
+            linkedin
+            github
+            instagram
+          }
         }
       }
     }
-  }
-`
+  `)
 
-export default IndexPage
+  const { site } = data
+  const { siteMetadata } = site
+  const { social } = siteMetadata
+
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="Contact" />
+      <Wrapper>
+        <h1>Contact</h1>
+        <p>Need to get in touch with me?</p>
+        <ul>
+          <li>
+            <SocialName>Email: </SocialName> <Email />
+          </li>
+          {Object.keys(social).map(currSocial => (
+            <li key={currSocial}>
+              <SocialName>{currSocial}: </SocialName>
+              <a href={social[currSocial]}>{social[currSocial]}</a>
+            </li>
+          ))}
+        </ul>
+      </Wrapper>
+    </Layout>
+  )
+}
+
+export default Contact

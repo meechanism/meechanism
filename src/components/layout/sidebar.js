@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
@@ -27,64 +27,57 @@ const Branding = styled.div`
 `
 
 export const Sidebar = () => {
-  return (
-    <StaticQuery
-      query={sidebarQuery}
-      render={data => {
-        const { logo, author } = data
-        return (
-          <Wrapper>
-            <Link to="/">
-              <Branding>
-                <Image
-                  fixed={logo.childImageSharp.fixed}
-                  alt={author}
-                  style={{
-                    margin: 0,
-                  }}
-                />
-              </Branding>
-            </Link>
-
-            <Nav>
-              <Link to="/about/">
-                <NavItem>About</NavItem>
-              </Link>
-
-              <Link to="/blog/">
-                <NavItem>Blog</NavItem>
-              </Link>
-
-              <Link to="/projects/">
-                <NavItem>Projects</NavItem>
-              </Link>
-
-              <Link to="/contact/">
-                <NavItem>Contact</NavItem>
-              </Link>
-            </Nav>
-          </Wrapper>
-        )
-      }}
-    />
-  )
-}
-
-const sidebarQuery = graphql`
-  query SidebarQuery {
-    logo: file(absolutePath: { regex: "/mee-cha-logo.png/" }) {
-      childImageSharp {
-        fixed(width: 250) {
-          ...GatsbyImageSharpFixed
+  const data = useStaticQuery(graphql`
+    query SidebarQuery {
+      logo: file(absolutePath: { regex: "/mee-cha-logo.png/" }) {
+        childImageSharp {
+          fixed(width: 250) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          author
         }
       }
     }
-    site {
-      siteMetadata {
-        author
-      }
-    }
-  }
-`
+  `)
+
+  const { logo, author } = data
+  return (
+    <Wrapper>
+      <Link to="/">
+        <Branding>
+          <Image
+            fixed={logo.childImageSharp.fixed}
+            alt={author}
+            style={{
+              margin: 0,
+            }}
+          />
+        </Branding>
+      </Link>
+
+      <Nav>
+        <Link to="/about/">
+          <NavItem>About</NavItem>
+        </Link>
+
+        <Link to="/blog/">
+          <NavItem>Blog</NavItem>
+        </Link>
+
+        <Link to="/projects/">
+          <NavItem>Projects</NavItem>
+        </Link>
+
+        <Link to="/contact/">
+          <NavItem>Contact</NavItem>
+        </Link>
+      </Nav>
+    </Wrapper>
+  )
+}
 
 export default Sidebar

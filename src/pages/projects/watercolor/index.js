@@ -1,22 +1,46 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../../../components/layout"
+import LatestBlog from "../../../components/latest-blog"
 import SEO from "../../../components/seo"
 
-const Watercolor = props => {
+const WaterColorProjects = props => {
   const { location } = props
-  const siteTitle = "Watercolors"
+  const siteTitle = "Watercolor Projects"
+
+  const blogData = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(
+        filter: { frontmatter: { project: { eq: "watercolor" } } }
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              date
+              title
+            }
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Contact" />
+      <SEO title={siteTitle} />
 
       <div>
         <h1>{siteTitle}</h1>
-        <p>Need to get in touch with me?</p>
+
+        <LatestBlog data={blogData} />
       </div>
     </Layout>
   )
 }
 
-export default Watercolor
+export default WaterColorProjects

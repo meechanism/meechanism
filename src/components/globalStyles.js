@@ -16,8 +16,12 @@ export default createGlobalStyle`
     font-size: ${rhythm(0.5)};
   }
 
-  h1, h2, h3,h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
+  }
+
+  h3 {
+    margin: 0 0 ${rhythm(1 / 2)};
   }
 `

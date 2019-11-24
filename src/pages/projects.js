@@ -1,23 +1,12 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
+import Card from "../components/card"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { scale } from "../utils/typography"
 import Colors from "../components/colors"
-
-const ProjectWrapper = styled.div`
-  border-radius: 4px;
-  padding: ${rhythm(1 / 2)};
-  text-align: center;
-  margin: 0 0 ${rhythm(1 / 2)};
-  background: ${Colors.gray1};
-  transition: background 0.25s ease-in-out;
-  &:hover {
-    background: ${Colors.white};
-  }
-`
 
 const Title = styled.h2`
   ${scale(0.5)};
@@ -57,10 +46,10 @@ const ALL_PROJECTS = [
 const Project = ({ project }) => {
   return (
     <Link to={`projects/${project.path}/`}>
-      <ProjectWrapper>
+      <Card linked>
         <Title>{project.title}</Title>
         <Desc>{project.description}</Desc>
-      </ProjectWrapper>
+      </Card>
     </Link>
   )
 }
@@ -82,33 +71,5 @@ const Page = props => {
     </Layout>
   )
 }
-export default Page
 
-// export const pageQuery = graphql`
-//   query {
-//     allMarkdownRemark(
-//       filter: { fileAbsolutePath: { glob: "**/projects/**/index.md" } }
-//     ) {
-//       edges {
-//         node {
-//           excerpt
-//           fields {
-//             slug
-//           }
-//           frontmatter {
-//             date(formatString: "MMMM DD, YYYY")
-//             title
-//             description
-//             # featuredImage {
-//             #   childImageSharp {
-//             #     fluid(maxWidth: 800) {
-//             #       ...GatsbyImageSharpFluid
-//             #     }
-//             #   }
-//             # }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+export default Page

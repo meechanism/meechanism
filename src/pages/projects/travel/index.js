@@ -1,22 +1,46 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../../../components/layout"
+import LatestBlog from "../../../components/latest-blog"
 import SEO from "../../../components/seo"
 
-const Travel = props => {
+const Code = props => {
   const { location } = props
-  const siteTitle = "Travel"
+  const siteTitle = "Travel Projects"
+
+  const blogData = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(
+        filter: { frontmatter: { project: { eq: "travel" } } }
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              date
+              title
+            }
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Contact" />
+      <SEO title={siteTitle} />
 
       <div>
         <h1>{siteTitle}</h1>
-        <p>Need to get in touch with me?</p>
+
+        <LatestBlog data={blogData} />
       </div>
     </Layout>
   )
 }
 
-export default Travel
+export default Code
