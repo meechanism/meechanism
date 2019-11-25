@@ -7,7 +7,7 @@ import GlobalStyle from "./globalStyles"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, title, children, footerCredit } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
@@ -62,6 +62,7 @@ class Layout extends React.Component {
           <main>{children}</main>
           <Footer>
             © {new Date().getFullYear()}. Built and maintained by Mee.
+            {footerCredit && footerCredit}
           </Footer>
         </Container>
       </Wrapper>

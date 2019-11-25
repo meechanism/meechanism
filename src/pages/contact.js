@@ -1,17 +1,24 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "styled-components"
+import Image from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { rhythm, scale } from "../utils/typography"
 import ReactComment from "../components/react-comment"
 
-const Wrapper = styled.div``
+const NodeWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: ${rhythm(1)};
+`
 
-const SocialName = styled.span`
-  text-transform: uppercase;
-  display: inline-block;
-  margin-right: 5px;
+const ContactAnchor = styled.a`
+  box-shadow: 0 0;
+  &:hover {
+    opacity: 0.5;
+  }
 `
 
 // Breaks up email in attempt to block spam bots :|
@@ -32,46 +39,108 @@ const Email = () => {
   )
 }
 
-const Contact = ({ location }) => {
-  const siteTitle = "Oh hi"
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          social {
-            linkedin
-            github
-            instagram
-          }
-        }
-      }
-    }
-  `)
+const IconCredit = () => (
+  <p>
+    Icons made by{" "}
+    <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+      Freepik
+    </a>{" "}
+    from{" "}
+    <a href="https://www.flaticon.com/" title="Flaticon">
+      flaticon.com
+    </a>
+  </p>
+)
+
+const Contact = ({ location, data }) => {
+  const siteTitle = "Contact"
 
   const { site } = data
   const { siteMetadata } = site
   const { social } = siteMetadata
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="Contact" />
-      <Wrapper>
-        <h1>Contact</h1>
-        <p>Need to get in touch with me?</p>
-        <ul>
-          <li>
-            <SocialName>Email: </SocialName> <Email />
-          </li>
-          {Object.keys(social).map(currSocial => (
-            <li key={currSocial}>
-              <SocialName>{currSocial}: </SocialName>
-              <a href={social[currSocial]}>{social[currSocial]}</a>
-            </li>
-          ))}
-        </ul>
-      </Wrapper>
+    <Layout location={location} title={siteTitle} footerCredit={<IconCredit />}>
+      <SEO title={siteTitle} />
+      <h1>Contact</h1>
+      <p>Need to get in touch with me? </p>
+
+      <NodeWrapper>
+        <Image
+          fixed={data.email.childImageSharp.fixed}
+          alt={`Email icon`}
+          style={{
+            margin: rhythm(1),
+            maxWidth: 100,
+          }}
+        />
+        <Email />
+      </NodeWrapper>
+
+      <NodeWrapper>
+        {Object.keys(social).map(currSocial => (
+          <ContactAnchor
+            href={social[currSocial]}
+            key={currSocial}
+            title={currSocial}
+          >
+            <Image
+              fixed={data[currSocial].childImageSharp.fixed}
+              alt={`${currSocial} icon`}
+              style={{
+                margin: rhythm(1),
+              }}
+            />
+          </ContactAnchor>
+        ))}
+      </NodeWrapper>
     </Layout>
   )
 }
 
 export default Contact
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        social {
+          linkedin
+          github
+          instagram
+        }
+      }
+    }
+    linkedin: file(absolutePath: { regex: "/contact-icons/linkedin/" }) {
+      childImageSharp {
+        fixed(width: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+
+    github: file(absolutePath: { regex: "/contact-icons/web/" }) {
+      childImageSharp {
+        fixed(width: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+
+    instagram: file(absolutePath: { regex: "/contact-icons/instagram/" }) {
+      childImageSharp {
+        fixed(width: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+
+    email: file(absolutePath: { regex: "/contact-icons/email/" }) {
+      childImageSharp {
+        fixed(width: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
