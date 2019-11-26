@@ -63,7 +63,7 @@ const ProjectList = ({ list }) => {
     <Card>
       <h3>Projects</h3>
       {list.map(project => (
-        <span key={project}>{project}</span>
+        <span key={project}>{project} </span>
       ))}
     </Card>
   )
@@ -83,7 +83,9 @@ const Blog = props => {
       <SEO title="All posts" />
       <h1>Blog</h1>
       <Bio />
-      <ProjectList list={getProjectsByPosts(posts)} />
+      {/* <ProjectList list={getProjectsByPosts(posts)} /> */}
+
+      <h2>All Posts</h2>
       <PostWrapper>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug

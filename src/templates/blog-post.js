@@ -5,6 +5,7 @@ import styled from "styled-components"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import TagList from "../components/tagList"
 import { rhythm, scale } from "../utils/typography"
 import Colors from "../components/colors"
 
@@ -23,17 +24,18 @@ const Date = styled.p`
 const BlogPostTemplate = props => {
   const { data, location } = props
   const { markdownRemark: post, site } = data
+  const { frontmatter } = post
   const siteTitle = site.siteMetadata.title
   const { previous, next } = props.pageContext
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        title={frontmatter.title}
+        description={frontmatter.description || post.excerpt}
       />
-      <Title>{post.frontmatter.title}</Title>
-      <Date>{post.frontmatter.date}</Date>
+      <Title>{frontmatter.title}</Title>
+      <Date>{frontmatter.date}</Date>
 
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr
@@ -41,6 +43,8 @@ const BlogPostTemplate = props => {
           marginBottom: rhythm(1),
         }}
       />
+
+      <TagList tags={frontmatter.tags} />
       <Bio />
 
       <ul
@@ -89,6 +93,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }

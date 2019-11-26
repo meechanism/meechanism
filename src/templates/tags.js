@@ -1,15 +1,18 @@
 import React from "react"
+import { Link, graphql } from "gatsby"
+
+import Layout from "../components/layout"
+import Button from "../components/button"
 
 // Components
-import { Link, graphql } from "gatsby"
-const Tags = ({ pageContext, data }) => {
+const Tags = ({ pageContext, data, location }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
   return (
-    <div>
+    <Layout location={location} title={tagHeader}>
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
@@ -17,17 +20,15 @@ const Tags = ({ pageContext, data }) => {
           const { title } = node.frontmatter
           return (
             <li key={slug}>
-              <Link to={slug}>{title}</Link>
+              <Link to={`blog${slug}`}>{title}</Link>
             </li>
           )
         })}
       </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
-      <Link to="/tags">All tags</Link>
-    </div>
+      <Link to="/tags">
+        <Button marginTop="35px">View all tags</Button>
+      </Link>
+    </Layout>
   )
 }
 
