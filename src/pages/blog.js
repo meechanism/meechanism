@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Colors from "../components/colors"
+import Card from "../components/card"
 
 const BlogHeader = styled.h3`
   margin: 0 0 ${rhythm(1 / 4)} 0;
@@ -41,6 +42,37 @@ const BlogEntry = styled.article`
 
 `
 
+const onlyUnique = (value, index, self) => {
+  return self.indexOf(value) === index
+}
+
+const getProjectsByPosts = posts => {
+  const projects = posts.map(post => {
+    let projectName = post.node.frontmatter.project
+    if (undefined === projectName || "" === projectName) {
+      projectName = "Other"
+    }
+    return projectName
+  })
+
+  return projects.filter(onlyUnique)
+}
+
+const ProjectList = ({ list }) => {
+  return (
+    <Card>
+      <h3>Projects</h3>
+      {list.map(project => (
+        <span key={project}>{project}</span>
+      ))}
+    </Card>
+  )
+}
+
+const PostWrapper = styled.div`
+  margin: 20px 0 40px;
+`
+
 const Blog = props => {
   const { data, location } = props
   const siteTitle = data.site.siteMetadata.title
@@ -49,8 +81,10 @@ const Blog = props => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
+      <h1>Blog</h1>
       <Bio />
-      <div style={{ margin: "20px 0 40px" }}>
+      <ProjectList list={getProjectsByPosts(posts)} />
+      <PostWrapper>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -67,7 +101,7 @@ const Blog = props => {
             </Link>
           )
         })}
-      </div>
+      </PostWrapper>
     </Layout>
   )
 }
@@ -92,6 +126,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            project
           }
         }
       }

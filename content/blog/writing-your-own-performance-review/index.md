@@ -2,6 +2,7 @@
 title: Writing Your Own Performance Review
 date: "2019-03-05T22:12:03.284Z"
 project: code
+tags: ["work"]
 ---
 
 I'm not the type to boast. I wasn't born and raised to properly receive complements (queue awkward silence when someone says my hair looks great today) and unfortunately, I think that also makes it difficult for me to give them as much as I would like.

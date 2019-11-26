@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import ReactComment from "../components/react-comment"
 
 const NodeWrapper = styled.div`
