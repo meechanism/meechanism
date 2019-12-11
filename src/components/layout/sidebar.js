@@ -6,6 +6,7 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../../utils/typography"
 import { NavItem, Nav } from "../nav"
+import MediaQuery from '../../utils/mediaQuery'
 
 const Wrapper = styled.div`
   width: ${rhythm(10)};
@@ -14,6 +15,16 @@ const Wrapper = styled.div`
   bottom: 0;
   box-sizing: border-box;
   overflow: hidden;
+
+  ${MediaQuery.medium`
+    margin: 0;
+    padding: ${rhythm(.5)} ${rhythm(1.5)};
+    position: relative;
+    width: auto;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  `};
 `
 
 const Branding = styled.div`
@@ -24,6 +35,19 @@ const Branding = styled.div`
   justify-content: center;
   box-shadow: 0;
   border: 0;
+  ${MediaQuery.medium`
+    width: 20px;
+    height: 20px;
+    background: #000;
+    margin: 0;
+    .gatsby-image-wrapper {height:0 !important;width:0}
+    img { display: none; }
+    padding: ${rhythm(1)};
+    &:after{
+      content: "MC";
+      color: #fff;
+    }
+  `};
 `
 
 export const Sidebar = () => {

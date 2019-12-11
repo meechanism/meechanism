@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { rhythm } from "../utils/typography"
 import Sidebar from "./layout/sidebar"
 import GlobalStyle from "./globalStyles"
+import MediaQuery from '../utils/mediaQuery'
 
 class Layout extends React.Component {
   render() {
@@ -58,7 +59,6 @@ class Layout extends React.Component {
         <GlobalStyle />
         <Sidebar />
         <Container>
-          {/* <header>{header}</header> */}
           <main>{children}</main>
           <Footer>
             © {new Date().getFullYear()}. Built and maintained by Mee.
@@ -75,6 +75,12 @@ const Container = styled.div`
   max-width: ${rhythm(24)};
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
   position: relative;
+
+  ${MediaQuery.medium`
+    margin: 0;
+    padding: ${rhythm(1.5)};
+    width: auto;
+  `};
 `
 
 const Wrapper = styled.div`

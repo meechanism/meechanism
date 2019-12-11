@@ -1,12 +1,17 @@
 import styled from "styled-components"
 import Colors from "./colors"
-
+import MediaQuery from '../utils/mediaQuery'
 import { rhythm } from "../utils/typography"
+
 export const Nav = styled.nav`
   box-sizing: border-box;
   width: 100%;
   margin: ${rhythm(1)};
   font-size: ${rhythm(0.5)};
+
+  ${MediaQuery.medium`
+    display: flex;
+  `};
 `
 
 export const NavSection = styled.div`
@@ -48,4 +53,22 @@ export const NavItem = styled.span`
       background-color: ${Colors.primary};
     }
   }
+
+  ${MediaQuery.medium`
+    font-size: ${rhythm(0.45)};
+
+    &:hover {
+      border: 0;
+      &::before {
+        position: absolute;
+        top: 0;
+        bottom: 1px;
+        left: 0;
+        width: 0px;
+        content: "";
+        background-color: ${Colors.primary};
+      }
+    }
+  `};
+
 `
