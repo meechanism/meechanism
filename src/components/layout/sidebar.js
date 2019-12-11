@@ -18,12 +18,12 @@ const Wrapper = styled.div`
 
   ${MediaQuery.medium`
     margin: 0;
-    padding: ${rhythm(.5)} ${rhythm(1.5)};
+    padding: ${rhythm(.25)} ${rhythm(0.5)};
     position: relative;
     width: auto;
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
   `};
 `
 
