@@ -2,7 +2,7 @@
 title: Making my own watercolor palette
 date: "2019-02-15T22:12:03.284Z"
 project: watercolor
-tags: ["education", "diy", "art"]
+tags: ["education", "diy", "art", "watercolor"]
 ---
 
 ![Watercolor palettes](./assets/palettes.jpg)
