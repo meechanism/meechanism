@@ -138,7 +138,7 @@ const About = props => {
       <ul>
         <li>
           Solutions should be simple and concise: find the path of least
-          resistance!
+          resistance and reduce complexity!
         </li>
         <li>
           Strive to be a good human to others, your surroundings, and the earth:

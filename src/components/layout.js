@@ -79,7 +79,7 @@ const Container = styled.div`
   ${MediaQuery.medium`
     margin: 0;
     padding: ${rhythm(1.5)};
-    width: auto;
+    max-width: 100%;
   `};
 `
 
