@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
   ${MediaQuery.medium`
     margin: 0;
-    padding: ${rhythm(.25)} ${rhythm(0.5)};
+    padding: 0;
     position: relative;
     width: auto;
     display: flex;

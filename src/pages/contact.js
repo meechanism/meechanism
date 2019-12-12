@@ -11,7 +11,8 @@ import ReactComment from "../components/react-comment"
 const NodeWrapper = styled.div`
   display: flex;
   align-items: center;
-  font-size: ${rhythm(1)};
+  font-size: ${rhythm(0.7)};
+  margin: 0;
 `
 
 const ContactAnchor = styled.a`
@@ -70,14 +71,13 @@ const Contact = ({ location, data }) => {
           fixed={data.email.childImageSharp.fixed}
           alt={`Email icon`}
           style={{
-            margin: rhythm(1),
-            maxWidth: 100,
+            margin: `${rhythm(0.5)} ${rhythm(1)} ${rhythm(0.5)} 0`,
+            maxWidth: 50,
           }}
         />
         <Email />
       </NodeWrapper>
 
-      <NodeWrapper>
         {Object.keys(social).map(currSocial => (
           <ContactAnchor
             href={social[currSocial]}
@@ -88,12 +88,11 @@ const Contact = ({ location, data }) => {
               fixed={data[currSocial].childImageSharp.fixed}
               alt={`${currSocial} icon`}
               style={{
-                margin: rhythm(1),
+                margin: `${rhythm(0.5)} ${rhythm(1)} ${rhythm(0.5)} 0`,
               }}
             />
           </ContactAnchor>
         ))}
-      </NodeWrapper>
     </Layout>
   )
 }
@@ -113,7 +112,7 @@ export const pageQuery = graphql`
     }
     linkedin: file(absolutePath: { regex: "/contact-icons/linkedin/" }) {
       childImageSharp {
-        fixed(width: 100) {
+        fixed(width: 75) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -121,7 +120,7 @@ export const pageQuery = graphql`
 
     github: file(absolutePath: { regex: "/contact-icons/web/" }) {
       childImageSharp {
-        fixed(width: 100) {
+        fixed(width: 75) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -129,7 +128,7 @@ export const pageQuery = graphql`
 
     instagram: file(absolutePath: { regex: "/contact-icons/instagram/" }) {
       childImageSharp {
-        fixed(width: 100) {
+        fixed(width: 75) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -137,7 +136,7 @@ export const pageQuery = graphql`
 
     email: file(absolutePath: { regex: "/contact-icons/email/" }) {
       childImageSharp {
-        fixed(width: 100) {
+        fixed(width: 50) {
           ...GatsbyImageSharpFixed
         }
       }

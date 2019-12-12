@@ -77,7 +77,7 @@ const Container = styled.div`
   position: relative;
 
   ${MediaQuery.medium`
-    margin: 0;
+    margin: ${rhythm(1)} 0 0;
     padding: ${rhythm(0.5)};
     max-width: 100%;
   `};

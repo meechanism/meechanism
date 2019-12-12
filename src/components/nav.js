@@ -10,7 +10,13 @@ export const Nav = styled.nav`
   font-size: ${rhythm(0.5)};
 
   ${MediaQuery.medium`
+    margin: 0 0 0 ${rhythm(1)};
+    padding: 0;
     display: flex;
+    a {
+      box-shadow: none;
+    }
+
   `};
 `
 
@@ -38,9 +44,9 @@ export const NavItem = styled.span`
   box-shadow: none;
   text-decoration: none;
   color: ${Colors.black};
-
   text-transform: uppercase;
   letter-spacing: 2px;
+
   &:hover {
     border: 0;
     &::before {
@@ -56,17 +62,12 @@ export const NavItem = styled.span`
 
   ${MediaQuery.medium`
     font-size: ${rhythm(0.45)};
+    border-bottom: 1px solid transparent;
 
     &:hover {
-      border: 0;
+      border-bottom: 1px solid ${Colors.primary};
       &::before {
-        position: absolute;
-        top: 0;
-        bottom: 1px;
-        left: 0;
         width: 0px;
-        content: "";
-        background-color: ${Colors.primary};
       }
     }
   `};

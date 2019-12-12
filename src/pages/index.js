@@ -4,34 +4,28 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
 
 const Wrapper = styled.div``
 
-class IndexPage extends React.Component {
-  render() {
-    const siteTitle = "Oh hi"
+const IndexPage = ({location}) => {
+  const siteTitle = "Oh hi"
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO
+        title="Home"
+        keywords={[`Mee Cha`, `frontend`, `full-stack developer`, `Hmong`]}
+      />
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="Home"
-          keywords={[`Mee Cha`, `frontend`, `full-stack developer`, `Hmong`]}
-        />
-
-        <Wrapper>
-          <h1>Oh hi</h1>
-          <p>Didn't see you there.</p>
-          <Link to="/blog/">
-            <Button marginTop="35px">Looking to read?</Button>
-          </Link>
-          <Link to="/projects/">
-            <Button marginTop="35px">See some stuff?</Button>
-          </Link>
-        </Wrapper>
-      </Layout>
-    )
-  }
+      <Wrapper>
+        <h1>Oh hello</h1>
+        <p>Didn't see you there.</p>
+        <ul>
+          <li><Link to="/blog/">Looking to read?</Link></li>
+          <li><Link to="/projects/">Want to browse some projects?</Link></li>
+        </ul>
+      </Wrapper>
+    </Layout>
+  )
 }
 
 export default IndexPage

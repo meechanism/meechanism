@@ -3,7 +3,7 @@ module.exports = {
     title: `Meechanism`,
     author: `Mee Cha`,
     description: `Digital dump of a Hmong-American frontend engineer`,
-    siteUrl: `https://hopeful-ramanujan-7b1b8d.netlify.com/`,
+    siteUrl: `https://www.meechanism.com`,
     social: {
       email: "mee.cha.nism@gmail.com",
       instagram: "https://www.instagram.com/meechanism",
@@ -59,7 +59,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-120604235-2`,
       },
     },
     {
@@ -69,7 +69,7 @@ module.exports = {
         short_name: `Meechanism`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#ed1a3e`,
         display: `minimal-ui`,
         // edit below
         icon: `content/assets/mee-logo-icon.png`,
