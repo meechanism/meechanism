@@ -32,6 +32,6 @@ Make sure your system has [NodeJS](https://nodejs.org/en/) (+ NPM) installed.
     $ npm start
     ```
 
-1. Open http://localhost:8000/ or browse data with http://localhost:8000/___graphql
+1. Open http://localhost:8000/ or browse GraphQL data with http://localhost:8000/___graphql
 
 

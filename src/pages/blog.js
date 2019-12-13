@@ -39,7 +39,6 @@ const BlogEntry = styled.article`
     content: "";
     background-color: ${Colors.gray2};
   }
-
 `
 
 const onlyUnique = (value, index, self) => {
@@ -117,7 +116,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/(blog)/"}},
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt
