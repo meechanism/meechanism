@@ -9,7 +9,7 @@ const WaterColorProjects = props => {
   const { location } = props
   const siteTitle = "Watercolor Projects"
 
-  const blogData = useStaticQuery(graphql`
+  const results = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
         filter: { frontmatter: { project: { eq: "watercolor" } } }
@@ -37,7 +37,7 @@ const WaterColorProjects = props => {
       <div>
         <h1>{siteTitle}</h1>
 
-        <LatestBlog data={blogData} />
+        <LatestBlog data={results.allMarkdownRemark} />
       </div>
     </Layout>
   )

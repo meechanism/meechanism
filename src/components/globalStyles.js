@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import Colors from "../components/colors"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 export default createGlobalStyle`
   a {

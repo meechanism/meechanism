@@ -5,11 +5,11 @@ import Layout from "../../../components/layout"
 import LatestBlog from "../../../components/latest-blog"
 import SEO from "../../../components/seo"
 
-const Code = props => {
+const Travel = props => {
   const { location } = props
   const siteTitle = "Travel Projects"
 
-  const blogData = useStaticQuery(graphql`
+  const results = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
         filter: { frontmatter: { project: { eq: "travel" } } }
@@ -37,10 +37,10 @@ const Code = props => {
       <div>
         <h1>{siteTitle}</h1>
 
-        <LatestBlog data={blogData} />
+        <LatestBlog data={results.allMarkdownRemark} />
       </div>
     </Layout>
   )
 }
 
-export default Code
+export default Travel

@@ -84,19 +84,19 @@ export const Sidebar = () => {
       </Link>
 
       <Nav>
-        <Link to="/about/">
+        <Link to="/about/" activeClassName="active">
           <NavItem>About</NavItem>
         </Link>
 
-        <Link to="/blog/">
+        <Link to="/blog/" activeClassName="active">
           <NavItem>Blog</NavItem>
         </Link>
 
-        <Link to="/projects/">
+        <Link to="/projects/" activeClassName="active">
           <NavItem>Projects</NavItem>
         </Link>
 
-        <Link to="/contact/">
+        <Link to="/contact/" activeClassName="active">
           <NavItem>Contact</NavItem>
         </Link>
       </Nav>

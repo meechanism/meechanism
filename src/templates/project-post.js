@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from "styled-components"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TagList from "../components/tagList"
@@ -21,7 +20,7 @@ const Date = styled.p`
   ${scale(0.05)};
 `
 
-const BlogPostTemplate = props => {
+const ProjectPostTemplate = props => {
   const { data, location } = props
   const { markdownRemark: post, site } = data
   const { frontmatter } = post
@@ -34,8 +33,8 @@ const BlogPostTemplate = props => {
         title={frontmatter.title}
         description={frontmatter.description || post.excerpt}
       />
-      <Title>{frontmatter.title}</Title>
-      {frontmatter.date && <Date>{frontmatter.date}</Date>}
+      <Title>Project: {frontmatter.title}</Title>
+      {frontmatter.date && <Date>Written: {frontmatter.date}</Date>}
 
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr
@@ -45,7 +44,6 @@ const BlogPostTemplate = props => {
       />
 
       <TagList tags={frontmatter.tags} />
-      <Bio />
 
       <ul
         style={{
@@ -58,14 +56,14 @@ const BlogPostTemplate = props => {
       >
         <li>
           {previous && (
-            <Link to={`blog${previous.fields.slug}`} rel="prev">
+            <Link to={`projects${previous.fields.slug}`} rel="prev">
               ← {previous.frontmatter.title}
             </Link>
           )}
         </li>
         <li>
           {next && (
-            <Link to={`blog${next.fields.slug}`} rel="next">
+            <Link to={`projects${next.fields.slug}`} rel="next">
               {next.frontmatter.title} →
             </Link>
           )}
@@ -75,10 +73,10 @@ const BlogPostTemplate = props => {
   )
 }
 
-export default BlogPostTemplate
+export default ProjectPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query ProjectPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title

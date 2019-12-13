@@ -9,14 +9,20 @@ export const Nav = styled.nav`
   margin: ${rhythm(1)};
   font-size: ${rhythm(0.5)};
 
+  a {
+    color: ${Colors.gray5};
+    &.active {
+      color: ${Colors.primary};
+
+    }
+  }
   ${MediaQuery.medium`
-    margin: 0 0 0 ${rhythm(1)};
+    margin: 0 0 0 ${rhythm(0.25)};
     padding: 0;
     display: flex;
     a {
       box-shadow: none;
     }
-
   `};
 `
 
@@ -24,15 +30,6 @@ export const NavSection = styled.div`
   padding: 2rem;
   border-bottom: 1px solid ${Colors.gray2};
   border-right: 1px solid ${Colors.gray2};
-`
-
-export const NavHeader = styled.div`
-  color: ${Colors.gray5};
-  padding: 0 0.5rem;
-  margin: 0 0 0.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
 `
 
 export const NavItem = styled.span`
@@ -43,7 +40,6 @@ export const NavItem = styled.span`
   font-size: ${rhythm(0.75)};
   box-shadow: none;
   text-decoration: none;
-  color: ${Colors.black};
   text-transform: uppercase;
   letter-spacing: 2px;
 

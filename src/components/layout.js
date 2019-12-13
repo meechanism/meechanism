@@ -89,7 +89,7 @@ const Wrapper = styled.div`
 
 const Footer = styled.footer`
   text-align: center;
-  margin: 24px;
+  margin: ${rhythm(2)} ${rhythm(1)} ${rhythm(1)};
   font-size: ${rhythm(0.5)};
 `
 

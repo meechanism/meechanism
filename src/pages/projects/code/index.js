@@ -4,14 +4,15 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../../../components/layout"
 import LatestBlog from "../../../components/latest-blog"
 import SEO from "../../../components/seo"
+import ProjectTile from "../../../components/ProjectTile"
 
 const Code = props => {
   const { location } = props
   const siteTitle = "Coding Projects"
 
-  const blogData = useStaticQuery(graphql`
+  const results = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(
+      blogData: allMarkdownRemark(
         filter: { frontmatter: { project: { eq: "code" } } }
         sort: { fields: frontmatter___date, order: DESC }
       ) {
@@ -21,8 +22,23 @@ const Code = props => {
               slug
             }
             frontmatter {
-              date
               title
+            }
+          }
+        }
+      }
+      projectData: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(projects\/code)/"}}) {
+        edges {
+          node {
+            excerpt
+            fields {
+              slug
+            }
+            frontmatter {
+              project
+              title
+              description
+              date(formatString: "MMMM DD, YYYY")
             }
           }
         }
@@ -33,14 +49,16 @@ const Code = props => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={siteTitle} />
-
-      <div>
-        <h1>{siteTitle}</h1>
-
-        <LatestBlog data={blogData} />
-      </div>
+      <h1>{siteTitle}</h1>
+      <h2>Professional</h2>
+      {results.projectData.edges.length && buildProjectTiles(results.projectData.edges)}
+      <LatestBlog data={results.blogData} />
     </Layout>
   )
+}
+
+const buildProjectTiles = (projectNodes) => {
+  return projectNodes.map(project => <ProjectTile key={project.node.fields.slug} data={project.node}/>)
 }
 
 export default Code
