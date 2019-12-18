@@ -43,9 +43,10 @@ const ProjectPostTemplate = props => {
         }}
       />
 
-      <TagList tags={frontmatter.tags} />
+      {/* Fixme: separate blog and project tags */}
+      {/* <TagList tags={frontmatter.tags} /> */}
 
-      <ul
+      {/* <ul
         style={{
           display: `flex`,
           flexWrap: `wrap`,
@@ -68,7 +69,7 @@ const ProjectPostTemplate = props => {
             </Link>
           )}
         </li>
-      </ul>
+      </ul> */}
     </Layout>
   )
 }

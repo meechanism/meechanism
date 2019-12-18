@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../../../components/layout"
 import LatestBlog from "../../../components/latest-blog"
 import SEO from "../../../components/seo"
-import ProjectTile from "../../../components/ProjectTile"
+import buildProjectTiles from "../../../components/ProjectTile"
 
 const Code = props => {
   const { location } = props
@@ -55,10 +55,6 @@ const Code = props => {
       <LatestBlog data={results.blogData} />
     </Layout>
   )
-}
-
-const buildProjectTiles = (projectNodes) => {
-  return projectNodes.map(project => <ProjectTile key={project.node.fields.slug} data={project.node}/>)
 }
 
 export default Code

@@ -27,19 +27,14 @@ const ALL_PROJECTS = [
     path: "code",
   },
   {
-    title: "Drawing",
-    description: "Drawings, illustrations, doodles, and all of the above.",
-    path: "drawing",
-  },
-  {
     title: "Travel",
     description: "A collection of places I've traveled",
     path: "travel",
   },
   {
-    title: "Watercolor",
-    description: "My watercolor journey learning and stumbles along the way",
-    path: "watercolor",
+    title: "Art",
+    description: "Drawings, illustrations, watercolor, mixed media, and all of the analog things.",
+    path: "art",
   },
 ]
 

@@ -1,7 +1,7 @@
 ---
 title: Negative Painting
 date: "2019-02-18T22:12:03.284Z"
-project: watercolor
+project: art
 tags: ["art", "watercolor", "learning"]
 ---
 

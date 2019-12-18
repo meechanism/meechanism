@@ -69,7 +69,7 @@ const ProjectTile = ({ data }) => {
 
       <Details>
           <h3>{data.frontmatter.title}</h3>
-          <em>Added: {data.frontmatter.date}</em>
+          <em>{data.frontmatter.date}</em>
           <p>{data.frontmatter.description}</p>
       </Details>
     </Wrapper>
@@ -77,4 +77,8 @@ const ProjectTile = ({ data }) => {
   )
 }
 
-export default ProjectTile
+const buildProjectTiles = (projectNodes) => {
+    return projectNodes.map(project => <ProjectTile key={project.node.fields.slug} data={project.node}/>)
+  }
+
+export default buildProjectTiles
