@@ -1,10 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import {  graphql } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import TagList from "../components/tagList"
 import { rhythm, scale } from "../utils/typography"
 import Colors from "../components/colors"
 
@@ -25,7 +24,6 @@ const ProjectPostTemplate = props => {
   const { markdownRemark: post, site } = data
   const { frontmatter } = post
   const siteTitle = site.siteMetadata.title
-  const { previous, next } = props.pageContext
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -93,6 +91,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

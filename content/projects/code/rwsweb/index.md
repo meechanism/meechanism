@@ -2,7 +2,7 @@
 title: RWS Web
 date: "2019-12-12T22:12:03.284Z"
 tags: ["work", "react", "javascript", "graphql"]
-image: './assets/01.png'
+featuredImage: './assets/01.png'
 description: Frontend UI/UX project over at OneMarket Network
 ---
 

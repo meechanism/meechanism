@@ -39,6 +39,13 @@ const Code = props => {
               title
               description
               date(formatString: "MMMM DD, YYYY")
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 300) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }

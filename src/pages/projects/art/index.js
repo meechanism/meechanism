@@ -40,6 +40,13 @@ const ArtProjects = props => {
               title
               description
               date(formatString: "MMMM DD, YYYY")
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 300) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
@@ -47,7 +54,6 @@ const ArtProjects = props => {
     }
   `)
 
-  console.log("**results: ", results)
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={siteTitle} />

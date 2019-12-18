@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 import Colors from "../components/colors"
 import { rhythm } from "../utils/typography"
+import MediaQuery from '../utils/mediaQuery'
 
 export default createGlobalStyle`
   a {
@@ -9,7 +10,7 @@ export default createGlobalStyle`
   .gatsby-resp-image-image,
   .gatsby-resp-image-background-image {
     border-radius: 4px;
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
   }
   figcaption {
     text-align: center;
@@ -24,5 +25,24 @@ export default createGlobalStyle`
 
   h3 {
     margin: 0 0 ${rhythm(1 / 2)};
+  }
+
+  ${'' /* for the project galleries */}
+
+  .img--project {
+    width: 45%;
+    display:inline-block;
+    margin: 0.5rem;
+    ${MediaQuery.medium`
+      margin: 0 auto 2rem;
+      max-width: 50%;
+    `};
+  }
+
+  .project-gallery {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: flex-start;
   }
 `

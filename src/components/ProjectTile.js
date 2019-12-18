@@ -19,24 +19,18 @@ const Wrapper = styled.article`
     &:hover {
         background: ${Colors.gray1};
     }
+
     p {
         margin: 0;
     }
-    &::before {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 2px;
-        content: "";
-        background-color: ${Colors.gray2};
-    }
+
 `
 
 const ImgWrapper = styled.div`
-    background: #ddd;
     min-width: 100px;
     max-width: 100px;
+    overflow: hidden;
+    ${'' /* border-right: 2px solid ${Colors.primary}; */}
 `
 
 const Details = styled.div`
@@ -48,31 +42,27 @@ const Details = styled.div`
 const ProjectTile = ({ data }) => {
   return (
     <Link to={`projects${data.fields.slug}`} key={data.fields.slug}>
+        <Wrapper>
+        {data.frontmatter.featuredImage &&
+        <ImgWrapper>
+            <Image
+            fluid={data.frontmatter.featuredImage.childImageSharp.fluid}
+            alt={data.frontmatter.title}
+            style={{
+                marginRight: rhythm(1 / 2),
+                marginBottom: 0,
+                minWidth: 150,
+            }}
+            />
+        </ImgWrapper>
+        }
 
-    <Wrapper>
-    {data.frontmatter.image &&
-      <ImgWrapper>
-        <Image
-          fixed={data.frontmatter.image.childImageSharp.fixed}
-          alt={data.frontmatter.title}
-          style={{
-              marginRight: rhythm(1 / 2),
-              marginBottom: 0,
-              minWidth: 150,
-          }}
-          imgStyle={{
-              borderRadius: `4px`,
-          }}
-          />
-      </ImgWrapper>
-      }
-
-      <Details>
-          <h3>{data.frontmatter.title}</h3>
-          <em>{data.frontmatter.date}</em>
-          <p>{data.frontmatter.description}</p>
-      </Details>
-    </Wrapper>
+        <Details>
+            <h3>{data.frontmatter.title}</h3>
+            <em>{data.frontmatter.date}</em>
+            <p>{data.frontmatter.description}</p>
+        </Details>
+        </Wrapper>
     </Link>
   )
 }
