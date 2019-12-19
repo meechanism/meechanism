@@ -33,7 +33,7 @@ const ALL_PROJECTS = [
   },
   {
     title: "Art",
-    description: "Drawings, illustrations, watercolor, mixed media, and all of the analog things.",
+    description: "Drawings, illustrations, watercolor, mixed media, and all of the analog things",
     path: "art",
   },
 ]
@@ -58,7 +58,9 @@ const Page = props => {
       <h1>{siteTitle}</h1>
       <p>
         The following categories list things that I am practicing, learning, or
-        doing!
+        doing! A lot of the content on this site can fit into the categories of:
+        code, art, and life. It turns out "Travel" is most of what I do outside
+        of the digital and analog.
       </p>
       {ALL_PROJECTS.map(project => (
         <Project project={project} key={project.path} />

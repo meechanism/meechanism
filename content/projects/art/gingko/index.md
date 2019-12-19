@@ -97,7 +97,7 @@ I painted. I very much enjoyed this process.
 
   <figure class="img--project">
     <img src="./assets/gingko15.jpg" alt="Watercolor space challenge 15" />
-    <figcaption>Day 15:</figcaption>
+    <figcaption>Day 15: Fin</figcaption>
   </figure>
 </div>
 
