@@ -42,7 +42,7 @@ I painted. I very much enjoyed this process.
 
   <figure class="img--project">
     <img src="./assets/gingko04.jpg" alt="Watercolor space challenge 4" />
-    <figcaption>Day 4: Midnight gingko, red + blue</figcaption>
+    <figcaption>Day 4: Midnight gingko (red and blue)</figcaption>
   </figure>
 
   <figure class="img--project">
