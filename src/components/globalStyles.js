@@ -6,6 +6,10 @@ import MediaQuery from '../utils/mediaQuery'
 export default createGlobalStyle`
   a {
     color: ${Colors.primary};
+    box-shadow: none;
+    &:hover {
+      opacity: 0.75;
+    }
   }
   .gatsby-resp-image-image,
   .gatsby-resp-image-background-image {
