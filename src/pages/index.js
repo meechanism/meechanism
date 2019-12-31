@@ -33,7 +33,6 @@ const IndexPage = (props) => {
   const { latestBlogs } = data || {};
   const { edges: allBlogs } = latestBlogs
 
-  console.log("data: ", data.landingTop.childImageSharp.fluid)
   return (
     <Layout location={location} title={siteTitle}>
       <SEO

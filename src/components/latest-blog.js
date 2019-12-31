@@ -9,7 +9,6 @@ const List = styled.ul`
   list-style-type: none;
   margin: 0;
 `
-
 List.Li = styled.li`
   margin: 0;
 `
@@ -18,7 +17,6 @@ const Date = styled.span`
   display: inline-block;
   font-family: monospace;
   margin-right: ${rhythm(1)};
-
 `
 
 // Annoying we cant have dynamic variables in our graphql queries yet, so
