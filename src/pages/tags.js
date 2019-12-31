@@ -1,9 +1,18 @@
 import React from "react"
+import styled from 'styled-components'
 import { Link, graphql } from "gatsby"
 
 // Utilities
 import Layout from "../components/layout"
 import StringUtil from "../utils/string"
+
+const List = styled.ul`
+  margin: 0;
+`
+
+List.Li = styled.li`
+  margin: 0;
+`
 
 const TagsPage = ({
   data: {
@@ -21,15 +30,15 @@ const TagsPage = ({
         Each blog post is categorized by a list of tags. The entire tags list is
         here to help you filter out posts by the content that interests you.
       </p>
-      <ul>
+      <List>
         {group.map(tag => (
-          <li key={tag.fieldValue}>
+          <List.Li key={tag.fieldValue}>
             <Link to={`/tags/${StringUtil.kebabCase(tag.fieldValue)}/`}>
               {tag.fieldValue} ({tag.totalCount})
             </Link>
-          </li>
+          </List.Li>
         ))}
-      </ul>
+      </List>
     </Layout>
   )
 }

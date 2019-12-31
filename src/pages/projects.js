@@ -33,7 +33,7 @@ const ALL_PROJECTS = [
   },
   {
     title: "Art",
-    description: "Drawings, illustrations, watercolor, mixed media, and all of the analog things",
+    description: "Drawings, illustrations, watercolor, mixed media, photography, and all of the creative things",
     path: "art",
   },
 ]

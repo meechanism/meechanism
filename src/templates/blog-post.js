@@ -2,23 +2,32 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from "styled-components"
 
+import Colors from '../components/colors'
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TagList from "../components/tagList"
 import { rhythm, scale } from "../utils/typography"
-import Colors from "../components/colors"
 
 const Title = styled.h1`
   margin: 0 0 ${rhythm(1 / 4)} 0;
   font-family: Montserrat, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
+  text-transform: uppercase;
+
   color: ${Colors.black};
-  ${scale(0.85)};
+  ${scale(0.65)};
 `
 
 const Date = styled.p`
-  ${scale(0.05)};
+  ${scale(0.025)};
+  margin-bottom: ${rhythm(1.5)};
+`
+
+const BlogTitle = styled.div`
+  text-align: center;
+  border-bottom: 1px solid ${Colors.primary};
+  margin-bottom: ${rhythm(1.5)};
 `
 
 const BlogPostTemplate = props => {
@@ -34,8 +43,11 @@ const BlogPostTemplate = props => {
         title={frontmatter.title}
         description={frontmatter.description || post.excerpt}
       />
-      <Title>{frontmatter.title}</Title>
-      {frontmatter.date && <Date>{frontmatter.date}</Date>}
+
+      <BlogTitle>
+        <Title>{frontmatter.title}</Title>
+        {frontmatter.date && <Date>{frontmatter.date}</Date>}
+      </BlogTitle>
 
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr

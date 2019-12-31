@@ -1,8 +1,26 @@
 import React from "react"
+import styled from 'styled-components'
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Button from "../components/button"
+import { rhythm } from "../utils/typography"
+
+const Date = styled.span`
+  display: inline-block;
+  font-family: monospace;
+  margin-right: ${rhythm(1)};
+`
+
+const List = styled.ul`
+  list-style-type: none;
+  margin: 0;
+`
+
+List.Li = styled.li`
+  margin: 0;
+`
+
 
 // Components
 const Tags = ({ pageContext, data, location }) => {
@@ -14,17 +32,17 @@ const Tags = ({ pageContext, data, location }) => {
   return (
     <Layout location={location} title={tagHeader}>
       <h1>{tagHeader}</h1>
-      <ul>
+      <List>
         {edges.map(({ node }) => {
           const { slug } = node.fields
-          const { title } = node.frontmatter
+          const { title, date } = node.frontmatter
           return (
-            <li key={slug}>
-              <Link to={`blog${slug}`}>{title}</Link>
-            </li>
+            <List.Li key={slug}>
+              <Date>{date}</Date> <Link to={`blog${slug}`}>{title}</Link>
+            </List.Li>
           )
         })}
-      </ul>
+      </List>
       <Link to="/tags">
         <Button marginTop="35px">View all tags</Button>
       </Link>
@@ -48,6 +66,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            date (formatString: "MMM DD, YYYY")
           }
         }
       }

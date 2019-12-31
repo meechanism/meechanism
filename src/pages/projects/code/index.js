@@ -22,6 +22,7 @@ const Code = props => {
               slug
             }
             frontmatter {
+              date(formatString: "MMM DD, YYYY")
               title
             }
           }

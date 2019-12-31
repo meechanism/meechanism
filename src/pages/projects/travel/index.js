@@ -21,7 +21,7 @@ const Travel = props => {
               slug
             }
             frontmatter {
-              date
+              date(formatString: "MMM DD, YYYY")
               title
             }
           }

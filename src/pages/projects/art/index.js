@@ -22,7 +22,7 @@ const ArtProjects = props => {
               slug
             }
             frontmatter {
-              date
+              date(formatString: "MMM DD, YYYY")
               title
             }
           }
@@ -54,6 +54,7 @@ const ArtProjects = props => {
     }
   `)
 
+  console.log("******Data: ", results)
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={siteTitle} />

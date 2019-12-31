@@ -1,12 +1,14 @@
 import React from "react"
-import {Link, graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Colors from '../components/colors'
-import {rhythm} from '../utils/typography'
+import { LinkedCard } from '../components/card'
+import BlogCard from '../components/blog-card'
+import { rhythm }  from '../utils/typography'
 
 const PageContainer = styled.div`
   text-align: center;
@@ -21,29 +23,8 @@ const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap ;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   margin-top: ${rhythm(1)};
-`;
-
-const Card = styled.div`
-  border-bottom: 2px solid transparent;
-  ${props => props.background ? props.background : `background: ${Colors.gray1}`};
-  transition: border-bottom 0.25s ease-in-out;
-  border-radius: 4px;
-
-  margin: ${props => props.margin ? props.margin: `0 0 ${rhythm(1)}`};
-  padding: ${rhythm(1)} ${rhythm(1)} ${rhythm(0)};
-  flex-grow: 1;
-  text-align: ${props => props.textAlign ? props.textAlign : 'inherit'};
-  color: ${props => props.color ? props.color : Colors.black};
-
-  ${props => props.unlinked ? null : `&:hover {
-    border-bottom: 2px solid ${Colors.primary};
-
-    h2, h4, em {
-      color: ${Colors.primary};
-    }`}
-  }
 `;
 
 const IndexPage = (props) => {
@@ -60,31 +41,22 @@ const IndexPage = (props) => {
         keywords={[`Mee Cha`, `frontend`, `full stack developer`, `Hmong`, `React engineer`]}
       />
       <PageContainer>
-        <Card unlinked color={Colors.white} background={`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(100, 55, 55, 0.5)),
+        <LinkedCard unlinked color={Colors.white} background={`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(100, 55, 55, 0.5)),
           url("${data.landingTop.childImageSharp.fluid.src}"); background-size: cover;`}>
           <h1>{siteTitle}</h1>
           <Text>I'm Mee. I build things. </Text>
           <Text>I play with the digital and analog.</Text>
           <Text>I'm curious. I learn. I write.</Text>
-        </Card>
+        </LinkedCard>
 
-        {allBlogs.map(blog =>
-          <Link to={`blog${blog.node.fields.slug}`}>
-            <Card textAlign={'left'}>
-                <em>{blog.node.frontmatter.date}</em>
-                <h4>{blog.node.frontmatter.title}</h4>
-                <p>{blog.node.excerpt}</p>
-                {/* Continue reading &#8594; */}
-            </Card>
-          </Link>
-        )}
+        {allBlogs.map(blog => <BlogCard node={blog.node} />)}
 
         <Link to="blog">
-          <Text align="right">Read More &#8594;</Text>
+          <Text align="center">Read More &#8594;</Text>
         </Link>
 
         <Wrapper>
-          <Link to="projects/art"><Card margin={`0 ${rhythm(1)} ${rhythm(1)} 0`}>
+          <Link to="projects/art"><LinkedCard margin={`0 ${rhythm(1/2)} ${rhythm(1/2)}`}>
             <h2>Art</h2>
             <Image
               fluid={data.gingko.childImageSharp.fluid}
@@ -95,9 +67,9 @@ const IndexPage = (props) => {
                 marginBottom: rhythm(1)
               }}
             />
-          </Card></Link>
+          </LinkedCard></Link>
 
-          <Link to="projects/code"><Card>
+          <Link to="projects/code"><LinkedCard margin={`0 ${rhythm(1/2)} ${rhythm(1/2)}`}>
             <h2>Code</h2>
             <Image
               fluid={data.code.childImageSharp.fluid}
@@ -108,7 +80,7 @@ const IndexPage = (props) => {
                 marginBottom: rhythm(1)
               }}
             />
-          </Card></Link>
+          </LinkedCard></Link>
         </Wrapper>
       </PageContainer>
     </Layout>
