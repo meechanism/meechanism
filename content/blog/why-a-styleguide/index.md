@@ -18,10 +18,11 @@ To assist in quickly designing, prototyping and deploying digital products using
 
 ## What is a style guide?
 
-- The style guide is the living and growing single source of truth for determining the product’s UI and how it is presented. It supports the primary purpose by:
+The style guide is the living and growing single source of truth for determining the product’s UI and how it is presented. It supports the primary purpose by:
+
 - Removing the guesswork for how certain components look and behave under certain states showcased by our component library.
 - Reusing code so styles and components aren’t reinvented.
-- Socializing the style guide and its patterns in one place so we all speak the same language and share the same expectations.
+- Socializing the style guide and its patterns in one place so teams speak the same language and share the same expectations.
 - Showing live component examples, allowing the user to interact with various elements to understand look and behavior.
 - Showing code snippets alongside components for a contextual understanding of implementation.
 - Standardizing guidelines for global styles, such as layout grids, breakpoints, colors, typography and more.
@@ -35,11 +36,11 @@ To assist in quickly designing, prototyping and deploying digital products using
 ## The style guide is NOT:
 
 - Your frontend UI solution or a UI framework (like Bootstrap). It is meant to supplement the developer's presentation layer and to standardize the designers’ mocks.
-- Your component library. The Style Guide itself is a consumer! The Component Library is a separate package you can import into your project to use.
+- Your component library. The style guide itself is a consumer! The Component Library is a separate package you can import into your project to use.
 - A place where you request new components/elements and behavior changes. If you have any suggestions or concerns, please work with the designers first.
 - A place for referencing the best-practices for the digital brand.
 - Meant to stifle creativity and innovation. Think of it as a baseline that can adapt to our products’ needs over time.
-- Meant to teach people how to code. There are other websites and classes with thorough curriculums for learning. The Style Guide is a reference that describes and - hands you the building blocks for maintaining our UI, but it is not a tool used to help you learn how to code Javascript and HTML/CSS, run build tools, etc.
+- Meant to teach people how to code. There are other websites and classes with thorough curriculums for learning. The style guide is a reference that describes and - hands you the building blocks for maintaining our UI, but it is not a tool used to help you learn how to code Javascript and HTML/CSS, run build tools, etc.
 
 ## Target Audience (Who is it for?)
 
@@ -67,8 +68,9 @@ Below are the basic iterative steps for how the style guide will be developed an
 - If a new element (or state/behavior) is found, it will be evaluated and determined whether or not changes/additions will make it into the library.
 - A frontend developer will implement the new changes and add them to the component library. It will then be reviewed by peers and merged.
 - The style guide will be updated reflecting the above.
-- Consumers of the component library and Style Guide will be notified of the update.
-- Wash and repeat.
+- Consumers of the component library and style guide will be notified of the update.
+
+Wash and repeat.
 
 ## Criteria/flow for adding new elements, behavior, or state to the style guide
 
