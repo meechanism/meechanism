@@ -58,7 +58,7 @@ Don't get too carried away here. I'd say lodging/stay is required, but the other
 
 <figure>
   <img src="./assets/himeji.jpg" alt="Himeji Castle">
-  <figcaption>Walking up the through Himeji Castle. One of the castles I dreamed of visiting as a child. Dec 18, 2018</figcaption>
+  <figcaption>Walking up through Himeji Castle. One of the castles I dreamed of visiting as a child. Dec 18, 2018</figcaption>
 </figure>
 
 > Note: Only officialize this part after purchasing your plane ticket. It makes no sense to do it before you know you're officially going. However, it may make sense for you to see a soft-list of milestones to help you determine whether or not to purchase your tickets. For example, maybe the concert or hotel you wanted to stay at is completely booked.
