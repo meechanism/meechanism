@@ -1,7 +1,7 @@
 ---
 title: Being Unemployed
 date: "2020-01-06T22:12:03.284Z"
-project: code
+project: life
 tags: ["career", "life"]
 ---
 
