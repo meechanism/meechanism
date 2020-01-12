@@ -14,7 +14,7 @@ I'm surprisingly enjoying it.
   <figcaption>The world is beautiful. So is freedom. Photo by <a href="https://www.pexels.com/@8moments">Simon Matzinger</a></figcaption>
 </figure>
 
-I haven't had a break in between jobs since... ever. I graduated from university on a Friday and I worked that following Monday. Since then, whenever when I left a job (or if a company exploded), I started again the next available week. This happened non-stop for 9 years.
+I haven't had a break in between jobs since... ever. I graduated from university on a Friday and I worked that following Monday. Since then, whenever I left a job (or if a company exploded), I started again the next available week. This happened non-stop for 9 years.
 
 _I finally get a chance to breathe._
 
