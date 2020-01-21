@@ -77,7 +77,7 @@ Perhaps the only reason why I felt safe making a ton of mistakes was that no one
 
 <figure>
   <img src="./mic.jpg" alt="Microphone">
-  <figcaption>Microphone. Photo by <a href="https://www.pexels.com/@tobias-bjorkli-706370">freestocks.org</a></figcaption>
+  <figcaption>Microphone. Photo by <a href="https://www.pexels.com/@freestocks">freestocks.org</a></figcaption>
 </figure>
 
 ## Strengths of failure
