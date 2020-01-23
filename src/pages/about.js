@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Pill, PillBox } from "../components/Pill"
+import { Pill, PillBox } from "../components/pill"
 import { rhythm } from "../utils/typography"
 import Colors from "../components/colors"
 
