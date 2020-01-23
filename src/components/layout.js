@@ -8,52 +8,7 @@ import MediaQuery from '../utils/mediaQuery'
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children, footerCredit } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    const blogPath = `${__PATH_PREFIX__}/blog/`
-    let header
-
-    // if (location.pathname === rootPath || location.pathname === blogPath) {
-    //   header = (
-    //     <h1
-    //       style={{
-    //         marginBottom: rhythm(1.5),
-    //         marginTop: 0,
-    //       }}
-    //     >
-    //       <Link
-    //         style={{
-    //           boxShadow: `none`,
-    //           textDecoration: `none`,
-    //           color: `inherit`,
-    //         }}
-    //         to={location.pathname === blogPath ? `/blog/` : `/`}
-    //       >
-    //         {title}
-    //       </Link>
-    //     </h1>
-    //   )
-    // } else {
-    //   header = (
-    //     <h3
-    //       style={{
-    //         fontFamily: `Montserrat, sans-serif`,
-    //         marginTop: 0,
-    //       }}
-    //     >
-    //       <Link
-    //         style={{
-    //           boxShadow: `none`,
-    //           textDecoration: `none`,
-    //           color: `inherit`,
-    //         }}
-    //         to={`/blog/`}
-    //       >
-    //         {title}
-    //       </Link>
-    //     </h3>
-    //   )
-    // }
+    const { children, footerCredit } = this.props;
     return (
       <Wrapper>
         <GlobalStyle />
@@ -72,7 +27,7 @@ class Layout extends React.Component {
 
 const Container = styled.div`
   margin: 0 0 0 ${rhythm(12)};
-  max-width: ${rhythm(24)};
+  max-width: ${rhythm(28)};
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
   position: relative;
 

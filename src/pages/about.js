@@ -5,7 +5,9 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Pill, PillBox } from "../components/Pill"
 import { rhythm } from "../utils/typography"
+import Colors from "../components/colors"
 
 const ImageWrapper = styled.div`
   float: left;
@@ -48,23 +50,32 @@ const About = props => {
 
       <TextJustify>
         I enjoy creating awesome UI/UX interfaces and learning the latest
-        frontend technologies. I can't relate when people hate on JavaScript.
+        frontend technologies.
       </TextJustify>
 
+
+      <TextJustify> My favorite devy things right now:</TextJustify>
+      <PillBox>
+        <Pill background={Colors.g1}>JavaScript/TypeScript</Pill>
+        <Pill background={Colors.g1}>React + Hooks</Pill>
+        <Pill background={Colors.g1}>Styled Components</Pill>
+        <Pill background={Colors.g2}>VS Code</Pill>
+        <Pill background={Colors.g2}>Git</Pill>
+        <Pill background={Colors.g2}>HTML/CSS</Pill>
+        <Pill background={Colors.g2}>UX/Accessibility</Pill>
+        <Pill background={Colors.g3}>NodeJs/Express</Pill>
+        <Pill background={Colors.g3}>Apollo/GraphQL</Pill>
+        <Pill background={Colors.g4}>CI/CD</Pill>
+      </PillBox>
+
       <TextJustify>
-        My roots are video games and anime. I like to pewpew and paint when I
-        have free time. But I also love reading sci-fi and fantasy. I like
-        flexing my creative outlets.
+        My roots are video games and anime. I like to draw and paint when I
+        am not coding away. But I also love reading sci-fi and fantasy.
       </TextJustify>
 
       <TextJustify>
         When I grow up, I want to run a bed and breakfast in a remote location.
         I will have chickens in the back yard and a fruitful garden to tend.
-      </TextJustify>
-
-      <TextJustify>
-        If I died and became a ghost, I'd smell like burnt toast and make whale
-        noises.
       </TextJustify>
 
       <h2>What's with the logo?</h2>

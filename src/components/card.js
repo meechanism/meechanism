@@ -27,8 +27,8 @@ export const LinkedCard = styled.div`
   transition: border-bottom 0.25s ease-in-out;
   border-radius: 4px;
 
-  margin: ${props => props.margin ? props.margin: `0 0 ${rhythm(1)}`};
-  padding: ${rhythm(1)} ${rhythm(1)} ${rhythm(0)};
+  margin: ${props => props.margin ? props.margin : `0 0 ${rhythm(1)}`};
+  padding: ${props => props.padding ? props.padding : `${rhythm(1)} ${rhythm(1)} ${rhythm(0)}`}; ;
   flex-grow: 1;
   text-align: ${props => props.textAlign ? props.textAlign : 'inherit'};
   color: ${props => props.color ? props.color : Colors.black};

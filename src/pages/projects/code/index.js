@@ -28,7 +28,10 @@ const Code = props => {
           }
         }
       }
-      projectData: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(projects\/code)/"}}) {
+      projectData: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(projects\/code)/"} }
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
         edges {
           node {
             excerpt
@@ -58,7 +61,6 @@ const Code = props => {
     <Layout location={location} title={siteTitle}>
       <SEO title={siteTitle} />
       <h1>{siteTitle}</h1>
-      <h2>Professional</h2>
       {results.projectData.edges.length && buildProjectTiles(results.projectData.edges)}
       <LatestBlog data={results.blogData} />
     </Layout>

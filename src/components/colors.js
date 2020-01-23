@@ -19,4 +19,13 @@ export default {
 
   white: "#fff",
   black: "#000",
+
+  // Grade scale: Green -> red
+  g1: "#4CAF50",
+  g2: "#8BC34A",
+  g3: "#CDDC39",
+  g4: "#FFEB3B",
+  g5: "#FFC107",
+  g6: "#FF9800",
+  g7: "#FF5722"
 }

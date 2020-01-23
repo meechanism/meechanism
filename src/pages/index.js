@@ -40,7 +40,10 @@ const IndexPage = (props) => {
         keywords={[`Mee Cha`, `frontend`, `full stack developer`, `Hmong`, `React engineer`]}
       />
       <PageContainer>
-        <LinkedCard unlinked color={Colors.white} background={`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(100, 55, 55, 0.5)),
+        <LinkedCard unlinked
+          padding={`${rhythm(1)} 0`}
+          color={Colors.white}
+          background={`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(100, 55, 55, 0.5)),
           url("${data.landingTop.childImageSharp.fluid.src}"); background-size: cover;`}>
           <h1>{siteTitle}</h1>
           <Text>I'm Mee. I build things. </Text>
