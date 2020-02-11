@@ -53,7 +53,6 @@ const About = props => {
         frontend technologies.
       </TextJustify>
 
-
       <TextJustify> My favorite devy things right now:</TextJustify>
       <PillBox>
         <Pill background={Colors.g1}>JavaScript/TypeScript</Pill>
@@ -69,8 +68,8 @@ const About = props => {
       </PillBox>
 
       <TextJustify>
-        My roots are video games and anime. I like to draw and paint when I
-        am not coding away. But I also love reading sci-fi and fantasy.
+        My roots are video games and anime. I like to draw and paint when I am
+        not coding away. But I also love reading sci-fi and fantasy.
       </TextJustify>
 
       <TextJustify>

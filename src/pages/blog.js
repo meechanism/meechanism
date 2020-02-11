@@ -6,7 +6,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
-import BlogCard from '../components/blog-card'
+import BlogCard from "../components/blog-card"
 
 const onlyUnique = (value, index, self) => {
   return self.indexOf(value) === index
@@ -59,13 +59,15 @@ const Blog = props => {
 
       <Wrapper>
         <h2>All Posts</h2>
-        <Link to="tags"><Button>View all tags</Button></Link>
+        <Link to="tags">
+          <Button>View all tags</Button>
+        </Link>
       </Wrapper>
 
       <PostWrapper>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
-          return (<BlogCard node={node}/>)
+          return <BlogCard node={node} />
         })}
       </PostWrapper>
     </Layout>
@@ -82,7 +84,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/(blog)/"}},
+      filter: { fileAbsolutePath: { regex: "/(blog)/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
