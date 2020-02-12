@@ -1,7 +1,7 @@
 ---
 title: An eye for design
 date: "2020-02-10T22:12:03.284Z"
-project: life
+project: art
 tags: ["design", "learning"]
 ---
 
