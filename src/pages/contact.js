@@ -78,21 +78,21 @@ const Contact = ({ location, data }) => {
         <Email />
       </NodeWrapper>
 
-        {Object.keys(social).map(currSocial => (
-          <ContactAnchor
-            href={social[currSocial]}
-            key={currSocial}
-            title={currSocial}
-          >
-            <Image
-              fixed={data[currSocial].childImageSharp.fixed}
-              alt={`${currSocial} icon`}
-              style={{
-                margin: `${rhythm(0.5)} ${rhythm(1)} ${rhythm(0.5)} 0`,
-              }}
-            />
-          </ContactAnchor>
-        ))}
+      {Object.keys(social).map(currSocial => (
+        <ContactAnchor
+          href={social[currSocial]}
+          key={currSocial}
+          title={currSocial}
+        >
+          <Image
+            fixed={data[currSocial].childImageSharp.fixed}
+            alt={`${currSocial} icon`}
+            style={{
+              margin: `${rhythm(0.5)} ${rhythm(1)} ${rhythm(0.5)} 0`,
+            }}
+          />
+        </ContactAnchor>
+      ))}
     </Layout>
   )
 }
