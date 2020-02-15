@@ -80,13 +80,10 @@ const About = props => {
       <h2>What's with the logo?</h2>
 
       <TextJustify>
-        Thanks, glad you noticed my hard work. <em>*cue eyeroll*</em>
-      </TextJustify>
-      <TextJustify>
-        To be honest, I'm no graphic designer, but if I had to complement my
-        development with something, it would be design. I like dabbling with the
-        arts (drawing/painting), but I'm not traditionally trained and only
-        practice for fun.
+        I'm no graphic designer, but if I had to complement my development with
+        something, it would be design. I like dabbling with the arts
+        (drawing/painting), but I'm not traditionally trained and only practice
+        for fun.
       </TextJustify>
 
       <ImageWrapper>
@@ -114,10 +111,8 @@ const About = props => {
       </TextJustify>
 
       <TextJustify>
-        The logo/branding is an attempt to mimic my awkward rendering style of
-        being a bit stiff and striving organicness. The graphic at the top is a
-        traditional Hmong motif of a <em>ram horn</em> and is usually found on
-        embroidery. The hand drawn looking webfont is Amatic SC.
+        The graphic is a traditional Hmong motif of a <em>ram horn</em> and is
+        usually found on embroidery.
       </TextJustify>
 
       <TextJustify>

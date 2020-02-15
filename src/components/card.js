@@ -23,26 +23,32 @@ export default styled.div`
 // Useful for shortened blog posts that link to the whole article
 export const LinkedCard = styled.div`
   border-bottom: 2px solid transparent;
-  ${props => props.background ? props.background : `background: ${Colors.gray1}`};
+  ${props =>
+    props.background ? props.background : `background: ${Colors.gray1}`};
   transition: border-bottom 0.25s ease-in-out;
   border-radius: 4px;
 
-  margin: ${props => props.margin ? props.margin : `0 0 ${rhythm(1)}`};
-  padding: ${props => props.padding ? props.padding : `${rhythm(1)} ${rhythm(1)} ${rhythm(0)}`}; ;
+  margin: ${props => (props.margin ? props.margin : `0 0 ${rhythm(1)}`)};
+  padding: ${props =>
+    props.padding ? props.padding : `${rhythm(1)} ${rhythm(1)} ${rhythm(0)}`}; ;
   flex-grow: 1;
-  text-align: ${props => props.textAlign ? props.textAlign : 'inherit'};
-  color: ${props => props.color ? props.color : Colors.black};
+  text-align: ${props => (props.textAlign ? props.textAlign : "inherit")};
+  color: ${props => (props.color ? props.color : Colors.black)};
 
   h4 {
     margin-top: 0px;
   }
 
-  ${'' /* If we dont want hover effects, add `unlinked` prop to component usage */}
-  ${props => props.unlinked ? null : `&:hover {
+  ${
+    "" /* If we dont want hover effects, add `unlinked` prop to component usage */
+  }
+  ${props =>
+    props.unlinked
+      ? null
+      : `&:hover {
     border-bottom: 2px solid ${Colors.primary};
     h2, h4, em {
       color: ${Colors.primary};
     }`}
   }
-`;
-
+`
