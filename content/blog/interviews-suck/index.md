@@ -6,16 +6,18 @@ project: code
 tags: ["career", "learning"]
 ---
 
-I'm convinced no one likes interviews. Candidates dread it. Interviewers, hiring managers, and companies don't like wasting time, especially if the candidate is lacking. Interviews are also two-way streets: candidates should take the opportunity to interview the team and ask questions to learn about the company for fit.
+I'm convinced no one likes interviews. Candidates dread it. Interviewers, hiring managers, and companies don't like wasting time, especially if the candidate is lacking.
 
 It makes sense for employers to run due diligence when considering a candidate to fill in a role. They wouldn't want to hire someone just to find out a couple of days later they don't know what they are doing. That's not only detrimental to the team but a drain in the bank. Similarly, a candidate shouldn't work for a company that raises many red flags like toxic work cultures and teams with poor direction and management.
+
+Interviews are also two-way streets: candidates should take the opportunity to interview the team and ask questions to learn about the company for fit.
 
 <figure>
   <img src="./women-interview.jpg" alt="women interviewing">
   <figcaption>Women interviewing. Photo by <a href="https://www.pexels.com/@divinetechygirl">Christina Morillo</a></figcaption>
 </figure>
 
-I think we can agree interviews are smart to carry out. However, I'm not convinced there's a perfect way of running them. A recent article from [Hired on the State of Software Engineers](https://hired.com/page/state-of-software-engineers/) stated:
+I think we can agree interviews are smart to carry out for both parties. However, I'm not convinced there's a perfect way of running them. A recent article from [Hired on the State of Software Engineers](https://hired.com/page/state-of-software-engineers/) stated:
 
 > Only 31% think coding exams effectively test their aptitude, while two-thirds say most coding exams are irrelevant to the daily job of an engineer.
 
