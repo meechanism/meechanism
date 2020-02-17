@@ -6,7 +6,7 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../../utils/typography"
 import { NavItem, Nav } from "../nav"
-import MediaQuery from '../../utils/mediaQuery'
+import MediaQuery from "../../utils/mediaQuery"
 
 const Wrapper = styled.div`
   width: ${rhythm(10)};
