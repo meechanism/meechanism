@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 import Colors from "../components/colors"
 import { rhythm } from "../utils/typography"
-import MediaQuery from '../utils/mediaQuery'
+import MediaQuery from "../utils/mediaQuery"
 
 export default createGlobalStyle`
   a {
@@ -31,7 +31,7 @@ export default createGlobalStyle`
     margin: 0 0 ${rhythm(1 / 2)};
   }
 
-  ${'' /* for the project galleries */}
+  ${"" /* for the project galleries */}
 
   .img--project {
     width: 45%;
