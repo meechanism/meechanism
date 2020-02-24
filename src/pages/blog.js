@@ -67,7 +67,7 @@ const Blog = props => {
       <PostWrapper>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
-          return <BlogCard node={node} />
+          return <BlogCard node={node} key={title} />
         })}
       </PostWrapper>
     </Layout>

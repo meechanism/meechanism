@@ -11,7 +11,7 @@ import { rhythm, scale } from "../utils/typography"
 
 const Title = styled.h1`
   margin: 0 0 ${rhythm(1 / 4)} 0;
-  font-family: Montserrat, sans-serif;
+  ${"" /* font-family: Montserrat, sans-serif; */}
   font-weight: normal;
   text-transform: uppercase;
 

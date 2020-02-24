@@ -77,13 +77,13 @@ const About = props => {
         I will have chickens in the back yard and a fruitful garden to tend.
       </TextJustify>
 
-      <h2>What's with the logo?</h2>
+      <h2>Code and Art</h2>
 
       <TextJustify>
         I'm no graphic designer, but if I had to complement my development with
-        something, it would be design. I like dabbling with the arts
-        (drawing/painting), but I'm not traditionally trained and only practice
-        for fun.
+        something, it would be design. I like dabbling with traditional and
+        analog mediums (graphite, inks, paints), but I'm not traditionally
+        trained and only practice for fun, relaxation, and general happiness.
       </TextJustify>
 
       <ImageWrapper>
@@ -93,7 +93,7 @@ const About = props => {
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
-            minWidth: 240,
+            minWidth: 300,
           }}
           imgStyle={{
             borderRadius: `4px`,
@@ -102,17 +102,23 @@ const About = props => {
       </ImageWrapper>
 
       <TextJustify>
-        But with a brain that thinks logically most of the day, my hands render
-        in a way that is very stiff, maybe confining myself to artificial rules
-        of perfection and boundaries. I have a hard time accepting this rigid
-        style. This is why I started experimenting with watercolor, since its
-        nature is to flow organically. I love the loose expressive look, but it
-        hurts the logical side of my brain to produce that style.
+        With a brain that thinks logically most of the day, my hands render very
+        stiffly. I may be confining myself to artificial rules of perfection and
+        boundaries. I have a hard time accepting this rigid style which is one
+        of the primary reasons why I started experimenting with watercolor.
       </TextJustify>
 
       <TextJustify>
+        Its nature is to flow organically. I love the loose expressive look, but
+        it hurts the logical side of my brain to produce that style.
+      </TextJustify>
+
+      <h2>Logo</h2>
+      <TextJustify>
         The graphic is a traditional Hmong motif of a <em>ram horn</em> and is
-        usually found on embroidery.
+        usually found on embroidery. Why a ram? I like to think of myself as
+        resilient and being found in unlikely places. I tend to find myself in
+        predominately male spaces: engineering, the gym, and video game spaces.
       </TextJustify>
 
       <TextJustify>
@@ -178,7 +184,7 @@ export const pageQuery = graphql`
 
     watercolor: file(absolutePath: { regex: "/watercolor-swatch.jpg/" }) {
       childImageSharp {
-        fixed(width: 300) {
+        fixed(width: 350) {
           ...GatsbyImageSharpFixed
         }
       }
