@@ -1,8 +1,8 @@
 ---
 title: My go-to interview questions (as a candidate)
 date: "2020-02-23T22:12:03.284Z"
-project: code
-tags: ["conference", "education"]
+project: life
+tags: ["career", "interview"]
 ---
 
 As a candidate before any interview call, whether an introductory call or a technical screen, I always prepare with a listen of questions I should ask. Most times I am allowed to ask the other person some questions and I never want to be empty-handed.

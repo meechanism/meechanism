@@ -2,7 +2,7 @@
 title: On fear and failure
 date: "2020-01-20T22:12:03.284Z"
 project: life
-tags: ["life", "career"]
+tags: ["life", "career", "interview"]
 ---
 
 I've been holding myself back for a while now. Maybe for a decade? Perhaps my whole professional career.
@@ -73,7 +73,6 @@ It's funny though; failure is so scary, I have to remember to breathe!
 I also have to remember failure is a huge part of my learning process. I am a visual learner and one of the earliest ways I learned web development was by actually making hundreds of little edits: values of CSS properties, HTML element ordering, and script logic. I kept changing things until I liked how something looked and until something finally behaved properly. I made a gazillion micro mistakes until I got my expected outcome.
 
 Perhaps the only reason why I felt safe making a ton of mistakes was that no one else was there to judge me. I am my biggest critic and I know I'm not perfect, so why should I care if I fail in front of others? I'm not being very fair to myself, am I?
-
 
 <figure>
   <img src="./mic.jpg" alt="Microphone">
