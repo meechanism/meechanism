@@ -1,14 +1,14 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
-import Image from "gatsby-image"
+
 import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Colors from "../components/colors"
-import { LinkedCard } from "../components/card"
 import BlogCard from "../components/blog-card"
 import { rhythm } from "../utils/typography"
+import colors from "../components/colors"
+import { useMousePosition } from "../utils/onMouse"
 
 const PageContainer = styled.div`
   text-align: center;
@@ -27,11 +27,51 @@ const Wrapper = styled.div`
   margin-top: ${rhythm(1)};
 `
 
+const Hero = styled.div`
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -${rhythm(2)} 0 0;
+`
+
+const HeroText = styled.h1`
+  font-weight: 800;
+  color: transparent;
+  font-size: ${rhythm(4)};
+  background: ${colors.gray3} url("/hero-bg.jpg");
+  background-position: ${props =>
+    props.pos ? `${props.pos.x}% ${props.pos.y}%` : "0"};
+
+  -webkit-background-clip: text;
+  line-height: ${rhythm(4)};
+  letter-spacing: -0.5rem;
+  margin: 0 0 ${rhythm(1)};
+`
+
+const HeroSubtext = styled.h2`
+  font-size: ${rhythm(0.75)};
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+`
+
 const IndexPage = props => {
   const siteTitle = "Greetings"
   const { data, location } = props
   const { latestBlogs } = data || {}
   const { edges: allBlogs } = latestBlogs
+
+  const [mousePos, setMousePos] = useState(false)
+
+  useMousePosition(
+    val => {
+      setMousePos(val)
+    },
+    [mousePos],
+    20
+  )
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -46,28 +86,21 @@ const IndexPage = props => {
         ]}
       />
       <PageContainer>
-        <LinkedCard
-          unlinked
-          padding={`${rhythm(1)} 0`}
-          color={Colors.white}
-          background={`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(100, 55, 55, 0.5)),
-          url("${data.landingTop.childImageSharp.fluid.src}"); background-size: cover;`}
-        >
-          <h1>{siteTitle}</h1>
-          <Text>I'm Mee. I build things. </Text>
-          <Text>I play with the digital and analog.</Text>
-          <Text>I'm curious. I learn. I write.</Text>
-        </LinkedCard>
+        <Hero>
+          <HeroSubtext>Not you, but </HeroSubtext>
+          <HeroText pos={mousePos}>Mee Cha</HeroText>
+          <HeroSubtext>Nerdy. Curious. Creative.</HeroSubtext>
+        </Hero>
 
         {allBlogs.map(blog => (
-          <BlogCard node={blog.node} />
+          <BlogCard node={blog.node} key={blog.node.fields.slug} />
         ))}
 
-        <Link to="blog">
+        <Link to="/blog">
           <Text align="center">Read More &#8594;</Text>
         </Link>
 
-        <Wrapper>
+        {/* <Wrapper>
           <Link to="projects/art">
             <LinkedCard margin={`0 ${rhythm(1 / 2)} ${rhythm(1 / 2)}`}>
               <h2>Art</h2>
@@ -97,7 +130,7 @@ const IndexPage = props => {
               />
             </LinkedCard>
           </Link>
-        </Wrapper>
+        </Wrapper> */}
       </PageContainer>
     </Layout>
   )

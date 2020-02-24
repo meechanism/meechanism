@@ -69,8 +69,7 @@ export const Sidebar = () => {
   const [isScrolled, setScrolled] = useState(false)
 
   useScrollPosition(
-    ({ prevPos, currPos }) => {
-      console.log(`currPos.y: ${currPos.y} `)
+    ({ currPos }) => {
       setScrolled(currPos.y > 0)
     },
     [isScrolled],
@@ -79,7 +78,6 @@ export const Sidebar = () => {
     300
   )
 
-  console.log(`isScrolled: ${isScrolled}`)
   return (
     <Wrapper isScrolled={isScrolled}>
       <Link to="/">

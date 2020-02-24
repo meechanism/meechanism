@@ -10,13 +10,12 @@ import TagList from "../components/tagList"
 import { rhythm, scale } from "../utils/typography"
 
 const Title = styled.h1`
-  margin: 0 0 ${rhythm(1 / 4)} 0;
-  ${"" /* font-family: Montserrat, sans-serif; */}
+  margin: 0 0 ${rhythm(1 / 2)} 0;
   font-weight: normal;
   text-transform: uppercase;
 
   color: ${Colors.black};
-  ${scale(0.65)};
+  ${scale(0.75)};
 `
 
 const Date = styled.p`
