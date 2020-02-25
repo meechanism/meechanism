@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../../../components/layout"
 import LatestBlog from "../../../components/latest-blog"
 import SEO from "../../../components/seo"
+import Header from "../../../components/header"
 
 const Travel = props => {
   const { location } = props
@@ -35,8 +36,7 @@ const Travel = props => {
       <SEO title={siteTitle} />
 
       <div>
-        <h1>{siteTitle}</h1>
-
+        <Header>{siteTitle}</Header>
         <LatestBlog data={results.allMarkdownRemark} />
       </div>
     </Layout>

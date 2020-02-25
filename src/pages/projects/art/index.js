@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../../../components/layout"
 import LatestBlog from "../../../components/latest-blog"
 import SEO from "../../../components/seo"
+import Header from "../../../components/header"
 import buildProjectTiles from "../../../components/ProjectTile"
 
 const ArtProjects = props => {
@@ -28,7 +29,9 @@ const ArtProjects = props => {
           }
         }
       }
-      projectData: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(projects\/art)/"}}) {
+      projectData: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(projects/art)/" } }
+      ) {
         edges {
           node {
             excerpt
@@ -59,8 +62,9 @@ const ArtProjects = props => {
       <SEO title={siteTitle} />
 
       <div>
-        <h1>{siteTitle}</h1>
-        {results.projectData.edges.length && buildProjectTiles(results.projectData.edges)}
+        <Header>{siteTitle}</Header>
+        {results.projectData.edges.length &&
+          buildProjectTiles(results.projectData.edges)}
 
         <LatestBlog data={results.allMarkdownRemark} />
       </div>
