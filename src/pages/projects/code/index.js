@@ -5,6 +5,7 @@ import Layout from "../../../components/layout"
 import LatestBlog from "../../../components/latest-blog"
 import SEO from "../../../components/seo"
 import buildProjectTiles from "../../../components/ProjectTile"
+import Header from "../../../components/header"
 
 const Code = props => {
   const { location } = props
@@ -29,7 +30,7 @@ const Code = props => {
         }
       }
       projectData: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(projects\/code)/"} }
+        filter: { fileAbsolutePath: { regex: "/(projects/code)/" } }
         sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {
@@ -60,8 +61,9 @@ const Code = props => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={siteTitle} />
-      <h1>{siteTitle}</h1>
-      {results.projectData.edges.length && buildProjectTiles(results.projectData.edges)}
+      <Header>{siteTitle}</Header>
+      {results.projectData.edges.length &&
+        buildProjectTiles(results.projectData.edges)}
       <LatestBlog data={results.blogData} />
     </Layout>
   )

@@ -1,5 +1,5 @@
 import React from "react"
-import styled from 'styled-components'
+import styled from "styled-components"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -21,7 +21,6 @@ List.Li = styled.li`
   margin: 0;
 `
 
-
 // Components
 const Tags = ({ pageContext, data, location }) => {
   const { tag } = pageContext
@@ -31,7 +30,7 @@ const Tags = ({ pageContext, data, location }) => {
   } tagged with "${tag}"`
   return (
     <Layout location={location} title={tagHeader}>
-      <h1>{tagHeader}</h1>
+      <h2>{tagHeader}</h2>
       <List>
         {edges.map(({ node }) => {
           const { slug } = node.fields
@@ -66,7 +65,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            date (formatString: "MMM DD, YYYY")
+            date(formatString: "MMM DD, YYYY")
           }
         }
       }

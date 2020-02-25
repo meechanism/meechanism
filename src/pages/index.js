@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
+import Image from "gatsby-image"
 
 import styled from "styled-components"
 
@@ -9,14 +10,14 @@ import BlogCard from "../components/blog-card"
 import { rhythm } from "../utils/typography"
 import colors from "../components/colors"
 import { useMousePosition } from "../utils/onMouse"
-
-const PageContainer = styled.div`
-  text-align: center;
-`
+import { LinkedCard } from "../components/card"
 
 const Text = styled.p`
   margin: 0 0 ${rhythm(1 / 2)};
   text-align: ${props => (props.align ? props.align : "inherit")};
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 const Wrapper = styled.div`
@@ -81,57 +82,63 @@ const IndexPage = props => {
           `Mee Cha`,
           `frontend`,
           `full stack developer`,
+          `web developer`,
           `Hmong`,
           `React engineer`,
         ]}
       />
-      <PageContainer>
-        <Hero>
-          <HeroSubtext>Not you, but </HeroSubtext>
-          <HeroText pos={mousePos}>Mee Cha</HeroText>
-          <HeroSubtext>Nerdy. Curious. Creative.</HeroSubtext>
-        </Hero>
+      <Hero>
+        <HeroSubtext>Not you, but </HeroSubtext>
+        <HeroText pos={mousePos}>Mee Cha</HeroText>
+        <HeroSubtext>Nerdy. Curious. Imaginative.</HeroSubtext>
+        <HeroSubtext>Her creative dump.</HeroSubtext>
+      </Hero>
 
-        {allBlogs.map(blog => (
-          <BlogCard node={blog.node} key={blog.node.fields.slug} />
-        ))}
+      {allBlogs.map(blog => (
+        <BlogCard node={blog.node} key={blog.node.fields.slug} />
+      ))}
 
-        <Link to="/blog">
-          <Text align="center">Read More &#8594;</Text>
+      <Link to="/blog">
+        <Text align="center">Read More &#8594;</Text>
+      </Link>
+
+      <Wrapper>
+        <Link to="projects/art">
+          <LinkedCard
+            textAlign="center"
+            margin={`0 ${rhythm(1 / 2)} ${rhythm(1 / 2)}`}
+          >
+            <HeroSubtext>Art</HeroSubtext>
+            <Image
+              fluid={data.gingko.childImageSharp.fluid}
+              alt={`Gingko watercolor`}
+              style={{
+                minHeight: 200,
+                minWidth: 250,
+                margin: `${rhythm(1)} 0`,
+              }}
+            />
+          </LinkedCard>
         </Link>
 
-        {/* <Wrapper>
-          <Link to="projects/art">
-            <LinkedCard margin={`0 ${rhythm(1 / 2)} ${rhythm(1 / 2)}`}>
-              <h2>Art</h2>
-              <Image
-                fluid={data.gingko.childImageSharp.fluid}
-                alt={`Gingko watercolor`}
-                style={{
-                  minHeight: 200,
-                  minWidth: 200,
-                  marginBottom: rhythm(1),
-                }}
-              />
-            </LinkedCard>
-          </Link>
-
-          <Link to="projects/code">
-            <LinkedCard margin={`0 ${rhythm(1 / 2)} ${rhythm(1 / 2)}`}>
-              <h2>Code</h2>
-              <Image
-                fluid={data.code.childImageSharp.fluid}
-                alt={`VS Code screenshot of this website`}
-                style={{
-                  minHeight: 200,
-                  minWidth: 200,
-                  marginBottom: rhythm(1),
-                }}
-              />
-            </LinkedCard>
-          </Link>
-        </Wrapper> */}
-      </PageContainer>
+        <Link to="projects/code">
+          <LinkedCard
+            textAlign="center"
+            margin={`0 ${rhythm(1 / 2)} ${rhythm(1 / 2)}`}
+          >
+            <HeroSubtext>Code</HeroSubtext>
+            <Image
+              fluid={data.code.childImageSharp.fluid}
+              alt={`VS Code screenshot of this website`}
+              style={{
+                minHeight: 200,
+                minWidth: 250,
+                margin: `${rhythm(1)} 0`,
+              }}
+            />
+          </LinkedCard>
+        </Link>
+      </Wrapper>
     </Layout>
   )
 }

@@ -4,6 +4,7 @@ import Image from "gatsby-image"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
+import Header from "../components/header"
 import SEO from "../components/seo"
 import { Pill, PillBox } from "../components/pill"
 import { rhythm } from "../utils/typography"
@@ -17,6 +18,15 @@ const TextJustify = styled.p`
   text-align: justify;
 `
 
+const Ramhorn = styled.img`
+  margin: 0 0 1rem;
+  width: ${rhythm(5)};
+  height: ${rhythm(5)};
+`
+const Center = styled.div`
+  text-align: center;
+`
+
 // class About extends React.Component {
 const About = props => {
   const { data, location } = props
@@ -25,7 +35,7 @@ const About = props => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About Mee" />
-      <h1>Who am I?</h1>
+      <Header>Who am I?</Header>
 
       <ImageWrapper>
         <Image
@@ -121,6 +131,9 @@ const About = props => {
         predominately male spaces: engineering, the gym, and video game spaces.
       </TextJustify>
 
+      <Center>
+        <Ramhorn src="/ramhorn.svg" />
+      </Center>
       <TextJustify>
         Why a ram? I like to think of myself as resilient and being found in
         unlikely places. I tend find myself in predominately male spaces:

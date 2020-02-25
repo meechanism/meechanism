@@ -2,8 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { Link, graphql } from "gatsby"
 
-// Utilities
 import Layout from "../components/layout"
+import Header from "../components/header"
 import StringUtil from "../utils/string"
 
 const List = styled.ul`
@@ -25,7 +25,7 @@ const TagsPage = ({
 }) => {
   return (
     <Layout location={location} title={title}>
-      <h1>Tags</h1>
+      <Header>Tags</Header>
       <p>
         Each blog post is categorized by a list of tags. The entire tags list is
         here to help you filter out posts by the content that interests you.

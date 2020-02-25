@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 import BlogCard from "../components/blog-card"
+import Header from "../components/header"
 
 const onlyUnique = (value, index, self) => {
   return self.indexOf(value) === index
@@ -53,7 +54,7 @@ const Blog = props => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <h1>Blog</h1>
+      <Header>Blog</Header>
       <Bio />
       {/* <ProjectList list={getProjectsByPosts(posts)} /> */}
 

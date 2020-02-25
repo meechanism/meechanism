@@ -82,7 +82,7 @@ export const Sidebar = () => {
     <Wrapper isScrolled={isScrolled}>
       <Link to="/">
         <Branding>
-          <Logo src={LOGO_DATA_URI} />
+          <Logo src="/ramhorn.svg" />
         </Branding>
       </Link>
 

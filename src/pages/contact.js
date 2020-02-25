@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import ReactComment from "../components/react-comment"
+import Header from "../components/header"
 
 const NodeWrapper = styled.div`
   display: flex;
@@ -63,7 +64,7 @@ const Contact = ({ location, data }) => {
   return (
     <Layout location={location} title={siteTitle} footerCredit={<IconCredit />}>
       <SEO title={siteTitle} />
-      <h1>Contact</h1>
+      <Header>Contact</Header>
       <p>Need to get in touch with me? </p>
 
       <NodeWrapper>

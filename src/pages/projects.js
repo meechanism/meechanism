@@ -7,6 +7,7 @@ import Card from "../components/card"
 import SEO from "../components/seo"
 import { scale } from "../utils/typography"
 import Colors from "../components/colors"
+import Header from "../components/header"
 
 const Title = styled.h2`
   ${scale(0.5)};
@@ -56,7 +57,7 @@ const Page = props => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={siteTitle} />
-      <h1>{siteTitle}</h1>
+      <Header>{siteTitle}</Header>
       <p>
         The following categories list things that I am practicing, learning, or
         doing! A lot of the content on this site can fit into the categories of:
