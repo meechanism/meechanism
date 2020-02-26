@@ -12,7 +12,7 @@ import Header from "../components/header"
 const NodeWrapper = styled.div`
   display: flex;
   align-items: center;
-  font-size: ${rhythm(0.7)};
+  font-size: ${rhythm(0.6)};
   margin: 0;
 `
 
@@ -73,7 +73,7 @@ const Contact = ({ location, data }) => {
           alt={`Email icon`}
           style={{
             margin: `${rhythm(0.5)} ${rhythm(1)} ${rhythm(0.5)} 0`,
-            maxWidth: 50,
+            minWidth: 50,
           }}
         />
         <Email />

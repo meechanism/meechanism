@@ -22,6 +22,7 @@ export default styled.h1`
   ${MediaQuery.medium`
     font-size: ${rhythm(2)};
     text-shadow: 4px 4px ${colors.secondary};
-    margin: 0 0 ${rhythm(0.5)};
+    margin: 0 0 ${rhythm(1)};
+    line-height: ${rhythm(2)};
   `};
 `
