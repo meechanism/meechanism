@@ -1,6 +1,8 @@
 import styled from "styled-components"
+
 import colors from "./colors"
 import { rhythm } from "../utils/typography"
+import MediaQuery from "../utils/mediaQuery"
 
 export default styled.h1`
   font-weight: 800;
@@ -16,4 +18,10 @@ export default styled.h1`
   -webkit-text-stroke-color: ${colors.gray5};
   -moz-text-stroke-color: ${colors.gray5};
   text-shadow: 6px 6px ${colors.secondary};
+
+  ${MediaQuery.medium`
+    font-size: ${rhythm(2)};
+    text-shadow: 4px 4px ${colors.secondary};
+    margin: 0 0 ${rhythm(0.5)};
+  `};
 `

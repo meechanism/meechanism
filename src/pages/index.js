@@ -49,6 +49,7 @@ const HeroText = styled.h1`
   line-height: ${rhythm(4)};
   letter-spacing: -0.5rem;
   margin: 0 0 ${rhythm(1)};
+  text-align: center;
 `
 
 const HeroSubtext = styled.h2`
@@ -56,6 +57,7 @@ const HeroSubtext = styled.h2`
   font-weight: normal;
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
 `
 
 const IndexPage = props => {
