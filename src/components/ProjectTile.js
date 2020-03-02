@@ -5,6 +5,7 @@ import styled from "styled-components"
 
 import Colors from "./colors"
 import { rhythm } from "../utils/typography"
+import MediaQuery from "../utils/mediaQuery"
 
 const Wrapper = styled.article`
   background: transparent;
@@ -36,6 +37,10 @@ const ImgWrapper = styled.div`
   padding: 4px;
   border-radius: 2px;
   border: 4px solid ${Colors.gray1};
+
+  ${MediaQuery.medium`
+    max-width: 100px;
+  `};
 `
 
 const Details = styled.div`
