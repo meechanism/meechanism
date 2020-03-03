@@ -27,11 +27,11 @@ const Date = styled.span`
 
 // Annoying we cant have dynamic variables in our graphql queries yet, so
 // passing in data for now. https://github.com/gatsbyjs/gatsby/issues/10482
-const LatestBlogPosts = ({ data }) => {
+const LatestBlogPosts = ({ data, label = "Related blog posts" }) => {
   const allPosts = data.edges
   return (
     <Card>
-      <h4>Related blog posts</h4>
+      <h4>{label}</h4>
       <List>
         {allPosts.map(edge => (
           <List.Li key={edge.node.fields.slug}>

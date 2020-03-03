@@ -4,6 +4,8 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Button from "../components/button"
+import LatestBlog from "../components/latest-blog"
+
 import { rhythm } from "../utils/typography"
 
 const Date = styled.span`
@@ -28,20 +30,10 @@ const Tags = ({ pageContext, data, location }) => {
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
+
   return (
     <Layout location={location} title={tagHeader}>
-      <h2>{tagHeader}</h2>
-      <List>
-        {edges.map(({ node }) => {
-          const { slug } = node.fields
-          const { title, date } = node.frontmatter
-          return (
-            <List.Li key={slug}>
-              <Date>{date}</Date> <Link to={`blog${slug}`}>{title}</Link>
-            </List.Li>
-          )
-        })}
-      </List>
+      <LatestBlog data={{ edges }} label={tagHeader} />
       <Link to="/tags">
         <Button marginTop="35px">View all tags</Button>
       </Link>
