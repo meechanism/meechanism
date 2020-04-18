@@ -29,7 +29,7 @@ Isn't that a rubbish experience for the candidates? How useful are the types of 
 
 I remember [Gayle Laakmann McDowell](https://crackingthecodinginterview.com) mentioned top tier FAANG companies stress the fundamentals because they want to hire the cream of the crop and find it worth their while to sacrifice potentially great candidates to prevent false positives. The reasoning: exceptional candidates with strong problem-solving skills can still test as false positives, but at least there will be "less" of them. Less time is wasted. Less time is spent to find talent.
 
-Sure, that can tough to swallow if you never heard that before. Solution: If you don't like it, then just don't interview at those companies! There are tons of companies that don't interview that way. It stinks, but I don't think this is going to change any time soon.
+Sure, that can be tough to swallow if you never heard that before. Solution: If you don't like it, then just don't interview at those companies! There are tons of companies that don't interview that way. It stinks, but I don't think this is going to change any time soon.
 
 ## My recent experience
 
