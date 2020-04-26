@@ -1,5 +1,5 @@
 import React from "react"
-import {  graphql } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -8,15 +8,22 @@ import { rhythm, scale } from "../utils/typography"
 import Colors from "../components/colors"
 
 const Title = styled.h1`
-  margin: 0 0 ${rhythm(1 / 4)} 0;
-  font-family: Montserrat, sans-serif;
-  font-weight: bold;
+  margin: 0 0 ${rhythm(1 / 2)} 0;
+  font-weight: normal;
+  text-transform: uppercase;
+
   color: ${Colors.black};
-  ${scale(0.85)};
+  ${scale(0.75)};
 `
 
 const Date = styled.p`
   ${scale(0.05)};
+`
+
+const ProjectTitle = styled.div`
+  text-align: center;
+  border-bottom: 1px solid ${Colors.primary};
+  margin-bottom: ${rhythm(1.5)};
 `
 
 const ProjectPostTemplate = props => {
@@ -31,8 +38,11 @@ const ProjectPostTemplate = props => {
         title={frontmatter.title}
         description={frontmatter.description || post.excerpt}
       />
-      <Title>Project: {frontmatter.title}</Title>
-      {frontmatter.date && <Date>Written: {frontmatter.date}</Date>}
+
+      <ProjectTitle>
+        <Title>{frontmatter.title}</Title>
+        {frontmatter.date && <Date>{frontmatter.date}</Date>}
+      </ProjectTitle>
 
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr

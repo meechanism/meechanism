@@ -38,6 +38,11 @@ const ALL_PROJECTS = [
       "Drawings, illustrations, watercolor, mixed media, photography, and all of the creative things",
     path: "art",
   },
+  {
+    title: "Plants",
+    description: "Becoming a responsible plant mom",
+    path: "plants",
+  },
 ]
 
 const Project = ({ project }) => {
