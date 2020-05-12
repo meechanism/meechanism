@@ -1,20 +1,35 @@
 ---
 title: Plant Terminology
-date: "2020-04-25T22:12:03.284Z"
 tags: ["plants", "indoor", "terminology"]
 description: Learn common plant terminology to boost your plant knowledge!
 ---
 
+Notes: Anything in the quote format will denote Greek words/phrases
+
+> Greek: definition
+
+---
+
+## Chlorophyll
+
+Responsible for the green color of leaves. Chlorotic leaves are pale, yellow, or yellow-white (see _Chlorosis_). Essential in photosynthesis, allowing plants to absorb energy from light.
+
+## Chlorosis
+
+A condition in which leaves produce insufficient chlorophyll.
+
+> _Khloros_: meaning "greenish-yellow", "pale green", "pale", "pallid", or "fresh".
+
 ## Epiphyte
 
-Greek word:
+> _Epi:_ top of
 
-- Epi = top on
-- Phyte = plant
+> _Phyte_: plant
 
-Epiphytes are plants that grow on top of other plants, usually trees! Examples are:
-
-- orchids
-- airplants
+Epiphytes are plants that grow on top of other plants, usually trees! Examples are: orchids, airplants, etc.
 
 They derive nutrition from the air, humidity, dust, and other things around them.
+
+## Variegation
+
+The appearance of differently colored sections on the leaves or even the stem of plants.

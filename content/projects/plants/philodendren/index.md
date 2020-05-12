@@ -1,9 +1,17 @@
 ---
-title: Philodendren
-date: "2020-04-24T22:12:03.284Z"
+title: Philodendron hederaceum
 tags: ["plants", "indoor", "philodendren", "trailing"]
-description: Taking care of philodendren
+featuredImage: "./01.jpg"
 ---
+
+|             |                                                      |
+| ----------- | ---------------------------------------------------- |
+| Common Name | Heartleaf                                            |
+| Since       | April 23, 2020                                       |
+| From        | [Gabriella Plants](https://www.gabriellaplants.com/) |
+| Condition   | Healthy, pest-free, 3 nodes                          |
+
+![Heartleaf](./01.jpg)
 
 ## Difficulty
 
@@ -31,8 +39,8 @@ description: Taking care of philodendren
 
 ## Propagate
 
-- Water
-- Take cutting below node or aerial root
+- Can be done in Water
+- Take cutting below node or aerial root. Cutting with at least 2 nodes better!
 - Better in high humidity
 - Wait for few inches root or proportionate to plant before potting in soil
 

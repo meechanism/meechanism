@@ -1,8 +1,6 @@
 ---
 title: Phlebodium aureum (Blue Star Fern)
-date: "2020-04-25T22:12:03.284Z"
 tags: ["plants", "indoor", "blue star"]
-description: Taking care of the blue star fern
 featuredImage: "./01-bluestar.jpg"
 ---
 

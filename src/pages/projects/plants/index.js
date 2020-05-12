@@ -31,6 +31,7 @@ const PlantProjects = props => {
       }
       projectData: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/(projects/plants)/" } }
+        sort: { order: ASC, fields: frontmatter___title }
       ) {
         edges {
           node {
@@ -58,7 +59,7 @@ const PlantProjects = props => {
   `)
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout>
       <SEO title={siteTitle} />
 
       <div>

@@ -1,9 +1,19 @@
 ---
 title: Chlorophytum comosum (Spider Plant)
-date: "2020-04-24T22:12:03.284Z"
 tags: ["plants", "indoor", "spider plant"]
-description: Taking care of the spider plant
+featuredImage: "./01.jpg"
 ---
+
+|             |                                                      |
+| ----------- | ---------------------------------------------------- |
+| Common Name | Spider Plant                                         |
+| Since       | April 23, 2020                                       |
+| From        | [Gabriella Plants](https://www.gabriellaplants.com/) |
+| Condition   | Healthy, pest-free, 3 nodes                          |
+
+![Spider Plant](./01.jpg)
+
+Mine actually has a reversed variegation.
 
 ## Difficulty
 
@@ -42,7 +52,3 @@ description: Taking care of the spider plant
 
 - 1:1:1
 - Every 2-4 weeks during growing season (March to September)
-
-# In my home
-
-- Spider Plant Variegated - Reverse: 04/23/2020

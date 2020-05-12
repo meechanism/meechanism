@@ -1,9 +1,29 @@
 ---
-title: Anthurium
-date: "2020-04-24T22:12:03.284Z"
+title: Anthurium Dutch
 tags: ["plants", "indoor", "anthurium"]
-description: Taking care of anthurium
+featuredImage: "./02.jpg"
 ---
+
+|           |                                                      |
+| --------- | ---------------------------------------------------- |
+| Since     | April 23, 2020                                       |
+| From      | [Gabriella Plants](https://www.gabriellaplants.com/) |
+| Condition | Healthy, pest-free, many flowers                     |
+
+<div class="project-gallery">
+  <figure class="img--project">
+    <img src="./01.jpg" alt="Close up of flowers" />
+    <figcaption>Taken 4/25/2020</figcaption>
+  </figure>
+  <figure class="img--project">
+    <img src="./02.jpg" alt="Top down view" />
+    <figcaption>Top down view voew</figcaption>
+  </figure>
+  <figure class="img--project">
+    <img src="./03.jpg" alt="Side view" />
+    <figcaption>Side view</figcaption>
+  </figure>
+</div>
 
 ## General
 

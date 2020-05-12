@@ -6,7 +6,7 @@ import MainMenu from "./layout/mainMenu"
 import GlobalStyle from "./globalStyles"
 import MediaQuery from "../utils/mediaQuery"
 
-const Layout = ({ children, footerCredit }) => (
+const Layout = ({ children, footerCredit = null }) => (
   <Wrapper>
     <GlobalStyle />
     <MainMenu />
