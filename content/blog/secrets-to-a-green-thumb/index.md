@@ -160,9 +160,7 @@ Solution: Just remember every plant and every environment is different, so you n
 
 [Darryl](https://www.instagram.com/houseplantjournal/) said something that ran true for me:
 
-> There is one universal truth to those with green thumbs. They have either:
-> large windows
-> grow lights
+> There is one universal truth to those with green thumbs. They have either: large windows OR grow lights.
 
 I have to agree because there's no other way around it!
 
