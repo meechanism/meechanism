@@ -30,6 +30,10 @@ Epiphytes are plants that grow on top of other plants, usually trees! Examples a
 
 They derive nutrition from the air, humidity, dust, and other things around them.
 
+## Leggy
+
+A plant will grow leggy when they are desparate for a light source and stretch during survival mode to find it. Stems will grow long in proportion to their leaves. Can cause paleness, stunted growth, and defenssless against pests.
+
 ## Variegation
 
 The appearance of differently colored sections on the leaves or even the stem of plants.

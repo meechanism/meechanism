@@ -53,33 +53,16 @@ const About = props => {
       </ImageWrapper>
 
       <TextJustify>
-        I'm <em>Mee</em>, a first generation Hmong-American software engineer
-        focusing on frontend. My background is in computer science and I
-        currently live and work in the San Francisco Bay Area.
+        I'm <em>Mee Cha</em>, a first generation Hmong-American, born and raised
+        in California.
       </TextJustify>
 
-      <TextJustify>
-        I enjoy creating awesome UI/UX interfaces and learning the latest
-        frontend technologies.
-      </TextJustify>
-
-      <TextJustify> My favorite devy things right now:</TextJustify>
-      <PillBox>
-        <Pill background={Colors.g1}>JavaScript/TypeScript</Pill>
-        <Pill background={Colors.g1}>React + Hooks</Pill>
-        <Pill background={Colors.g1}>Styled Components</Pill>
-        <Pill background={Colors.g2}>VS Code</Pill>
-        <Pill background={Colors.g2}>Git</Pill>
-        <Pill background={Colors.g2}>HTML/CSS</Pill>
-        <Pill background={Colors.g2}>UX/Accessibility</Pill>
-        <Pill background={Colors.g3}>NodeJs/Express</Pill>
-        <Pill background={Colors.g3}>Apollo/GraphQL</Pill>
-        <Pill background={Colors.g4}>CI/CD</Pill>
-      </PillBox>
+      <TextJustify>My favorite "Mee" joke is: Hi, nice to meecha.</TextJustify>
 
       <TextJustify>
         My roots are video games and anime. I like to draw and paint when I am
-        not coding away. But I also love reading sci-fi and fantasy.
+        not coding away. I also love reading sci-fi and fantasy and taking care
+        of my plants.
       </TextJustify>
 
       <TextJustify>
@@ -87,7 +70,24 @@ const About = props => {
         I will have chickens in the back yard and a fruitful garden to tend.
       </TextJustify>
 
+      <TextJustify>
+        I'm an ally to many plants as a friend, scientist, and mortician.
+      </TextJustify>
+
+      <TextJustify>My favorite plants right now:</TextJustify>
+      <PillBox>
+        <Pill background={Colors.g1}>String of Hearts</Pill>
+        <Pill background={Colors.g2}>Whale Fin</Pill>
+        <Pill background={Colors.g3}>Dried Eucalyptus</Pill>
+        <Pill background={Colors.g4}>Basil</Pill>
+      </PillBox>
+
       <h2>Code and Art</h2>
+
+      <TextJustify>
+        I enjoy creating awesome UI/UX interfaces and learning the latest
+        frontend technologies.
+      </TextJustify>
 
       <TextJustify>
         I'm no graphic designer, but if I had to complement my development with
@@ -161,18 +161,11 @@ const About = props => {
       </TextJustify>
       <ul>
         <li>
-          Solutions should be simple and concise: find the path of least
-          resistance and reduce complexity!
+          Strive to be good to yourself, to others, your surroundings, and the
+          earth.
         </li>
-        <li>
-          Strive to be a good human to others, your surroundings, and the earth:
-          help those in need!
-        </li>
-        <li>You only have one body and mind: take care of yourself!</li>
-        <li>
-          Never stop learning: you are a student and there's always something to
-          learn!
-        </li>
+        <li>Keep it simple. Keep it concise.</li>
+        <li>Never stop learning.</li>
       </ul>
     </Layout>
   )
@@ -187,9 +180,9 @@ export const pageQuery = graphql`
         title
       }
     }
-    avatar: file(absolutePath: { regex: "/profile-pic3.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/profile-pic2.jpg/" }) {
       childImageSharp {
-        fixed(width: 150, height: 218) {
+        fixed(width: 275) {
           ...GatsbyImageSharpFixed
         }
       }

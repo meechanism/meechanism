@@ -48,7 +48,3 @@ featuredImage: "./01.jpg"
 
 - Not pet safe. Keep away.
 - Drooling, loss of appetite, vomiting
-
-# In my home
-
-- Philodendron hederaceum (Heartleaf): 04/24/2020

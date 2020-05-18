@@ -1,5 +1,5 @@
 ---
-title: Substrate
+title: 1-Substrate
 tags: ["plants", "indoor", "soil"]
 description: Mediums, the home for your plants!
 ---

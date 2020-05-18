@@ -140,6 +140,24 @@ const IndexPage = props => {
             />
           </LinkedCard>
         </Link>
+
+        <Link to="projects/plants">
+          <LinkedCard
+            textAlign="center"
+            margin={`0 ${rhythm(1 / 2)} ${rhythm(1 / 2)}`}
+          >
+            <HeroSubtext>Plants</HeroSubtext>
+            <Image
+              fluid={data.plants.childImageSharp.fluid}
+              alt={`VS Code screenshot of this website`}
+              style={{
+                minHeight: 200,
+                minWidth: 250,
+                margin: `${rhythm(1)} 0`,
+              }}
+            />
+          </LinkedCard>
+        </Link>
       </Wrapper>
     </Layout>
   )
@@ -157,6 +175,13 @@ export const pageQuery = graphql`
       }
     }
     code: file(absolutePath: { regex: "/landing-code.png/" }) {
+      childImageSharp {
+        fluid(maxWidth: 630) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    plants: file(absolutePath: { regex: "/landing-plants.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 630) {
           ...GatsbyImageSharpFluid
