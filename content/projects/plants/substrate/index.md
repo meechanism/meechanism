@@ -2,6 +2,7 @@
 title: 1-Substrate
 tags: ["plants", "indoor", "soil"]
 description: Mediums, the home for your plants!
+type: project
 ---
 
 Well draining:

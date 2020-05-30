@@ -33,9 +33,9 @@ const ALL_PROJECTS = [
     path: "travel",
   },
   {
-    title: "Art",
+    title: "Art/Craft",
     description:
-      "Drawings, illustrations, watercolor, mixed media, photography, and all of the creative things",
+      "Drawings, illustrations, watercolor, mixed media, photography, DIY, and all of the creative things",
     path: "art",
   },
   {

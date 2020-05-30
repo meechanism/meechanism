@@ -2,6 +2,7 @@
 title: Anthurium Dutch
 tags: ["plants", "indoor", "anthurium"]
 featuredImage: "./02.jpg"
+type: project
 ---
 
 |           |                                                      |

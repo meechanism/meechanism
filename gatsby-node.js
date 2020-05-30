@@ -14,7 +14,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         # Alias the queries
         blogPosts: allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
-          filter: {fileAbsolutePath: {regex: "/(blog)/"}}
+          filter: { fileAbsolutePath: { regex: "/(blog)/" } }
           limit: 1000
         ) {
           edges {
@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
         projectPosts: allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
-          filter: {fileAbsolutePath: {regex: "/(projects)/"}}
+          filter: { fileAbsolutePath: { regex: "/(projects)/" } }
           limit: 1000
         ) {
           edges {
@@ -70,7 +70,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const tags = result.data.tagsGroup.group
 
   blogPosts.forEach((post, index) => {
-    const previous = index === blogPosts.length - 1 ? null : blogPosts[index + 1].node
+    const previous =
+      index === blogPosts.length - 1 ? null : blogPosts[index + 1].node
     const next = index === 0 ? null : blogPosts[index - 1].node
 
     createPage({
@@ -85,7 +86,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   })
 
   projectPosts.forEach((post, index) => {
-    const previous = index === projectPosts.length - 1 ? null : projectPosts[index + 1].node
+    const previous =
+      index === projectPosts.length - 1 ? null : projectPosts[index + 1].node
     const next = index === 0 ? null : projectPosts[index - 1].node
 
     createPage({

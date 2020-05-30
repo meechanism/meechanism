@@ -1,7 +1,8 @@
 ---
 title: Phlebodium aureum (Blue Star Fern)
-tags: ["plants", "indoor", "blue star"]
+tags: ["plants", "indoor", "fern", "blue star"]
 featuredImage: "./01-bluestar.jpg"
+type: project
 ---
 
 |           |                                                      |

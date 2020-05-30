@@ -2,6 +2,7 @@
 title: Philodendron hederaceum
 tags: ["plants", "indoor", "philodendren", "trailing"]
 featuredImage: "./01.jpg"
+type: project
 ---
 
 |             |                                                      |

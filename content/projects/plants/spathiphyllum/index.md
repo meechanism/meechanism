@@ -2,6 +2,7 @@
 title: Spathiphyllum (Peace Lily)
 tags: ["plants", "indoor", "Spathiphyllum", "peace lily"]
 featuredImage: "./01.jpg"
+type: project
 ---
 
 |           |                                     |

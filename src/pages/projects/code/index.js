@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../../../components/layout"
-import LatestBlog from "../../../components/latest-blog"
+import ListPosts from "../../../components/listPosts"
 import SEO from "../../../components/seo"
 import buildProjectTiles from "../../../components/ProjectTile"
 import Header from "../../../components/header"
@@ -64,7 +64,7 @@ const Code = props => {
       <Header>{siteTitle}</Header>
       {results.projectData.edges.length &&
         buildProjectTiles(results.projectData.edges)}
-      <LatestBlog data={results.blogData} />
+      <ListPosts data={results.blogData} />
     </Layout>
   )
 }

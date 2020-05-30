@@ -2,6 +2,7 @@
 title: Calathea Lancifolia
 tags: ["plants", "indoor", "calathea", "lancifolia"]
 featuredImage: "./01.jpg"
+type: project
 ---
 
 |           |                                    |

@@ -2,6 +2,7 @@
 title: Chlorophytum comosum (Spider Plant)
 tags: ["plants", "indoor", "spider plant"]
 featuredImage: "./01.jpg"
+type: project
 ---
 
 |             |                                                      |

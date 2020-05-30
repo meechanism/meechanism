@@ -2,6 +2,7 @@
 title: Sansevieria Masoniana
 tags: ["plants", "indoor", "Sansevieria", "whale fin"]
 featuredImage: "./01.jpg"
+type: project
 ---
 
 |           |                                                       |

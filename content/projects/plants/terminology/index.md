@@ -2,6 +2,7 @@
 title: Plant Terminology
 tags: ["plants", "indoor", "terminology"]
 description: Learn common plant terminology to boost your plant knowledge!
+type: project
 ---
 
 Notes: Anything in the quote format will denote Greek words/phrases

@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Button from "../components/button"
-import LatestBlog from "../components/latest-blog"
+import ListPosts from "../components/listPosts"
 
 import { rhythm } from "../utils/typography"
 
@@ -33,7 +33,7 @@ const Tags = ({ pageContext, data, location }) => {
 
   return (
     <Layout location={location} title={tagHeader}>
-      <LatestBlog data={{ edges }} label={tagHeader} />
+      <ListPosts data={{ edges }} label={tagHeader} />
       <Link to="/tags">
         <Button marginTop="35px">View all tags</Button>
       </Link>
@@ -58,6 +58,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMM DD, YYYY")
+            type
           }
         }
       }

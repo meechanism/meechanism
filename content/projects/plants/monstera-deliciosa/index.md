@@ -2,6 +2,7 @@
 title: Monstera Deliciosa
 tags: ["plants", "indoor", "Monstera Deliciosa"]
 featuredImage: "./01.jpg"
+type: project
 ---
 
 |           |                                                    |

@@ -75,12 +75,14 @@ Unsure of how to answer or address any of your observations? Excellent, the next
 
 ## Providing proper care
 
-Hopefully, observation of your plants will inspire you to look up their primary care instructions. Functional requirements to think about are:
+Hopefully, observation of your plants will inspire you to look up their primary care instructions.
 
 <figure>
   <img src="./string-of-hearts.jpg" alt="Underside of string of hearts">
   <figcaption>Underside of string of hearts</figcaption>
 </figure>
+
+Functional requirements to think about are:
 
 1. Best lighting conditions (and the lowest tolerable)
 2. Watering needs

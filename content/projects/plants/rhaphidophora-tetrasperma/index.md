@@ -1,7 +1,8 @@
 ---
 title: Rhaphidophora Tetrasperma
-tags: ["plants", "indoor", "Rhaphidophora Tetrasperma"]
+tags: ["plants", "indoor", "Rhaphidophora", "Tetrasperma"]
 featuredImage: "./01.jpg"
+type: project
 ---
 
 |           |                                                  |

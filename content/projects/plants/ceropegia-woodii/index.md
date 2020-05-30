@@ -2,6 +2,7 @@
 title: Ceropegia Woodii
 tags: ["plants", "indoor", "Ceropegia Woodii", "string of hearts"]
 featuredImage: "./01.jpg"
+type: project
 ---
 
 |           |                                              |
