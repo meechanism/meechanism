@@ -3,6 +3,7 @@ title: An eye for design
 date: "2020-02-10T22:12:03.284Z"
 project: art
 tags: ["design", "learning"]
+featuredImage: ./scale.jpg
 ---
 
 I'm not sure whether to file this under `code` or `art` because... isn't it both? I'm not classically trained in design in any way but have worked with designers for most of my career. I like to think I have an eye for tasteful design, but what does that mean?

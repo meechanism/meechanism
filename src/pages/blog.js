@@ -19,29 +19,6 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `
 
-const getProjectsByPosts = posts => {
-  const projects = posts.map(post => {
-    let projectName = post.node.frontmatter.project
-    if (undefined === projectName || "" === projectName) {
-      projectName = "Other"
-    }
-    return projectName
-  })
-
-  return projects.filter(onlyUnique)
-}
-
-const ProjectList = ({ list }) => {
-  return (
-    <>
-      <h2>Filters</h2>
-      {list.map(project => (
-        <span key={project}>{project} </span>
-      ))}
-    </>
-  )
-}
-
 const PostWrapper = styled.div`
   margin: 20px 0 40px;
 `
@@ -56,7 +33,6 @@ const Blog = props => {
       <SEO title="All posts" />
       <Header>Blog</Header>
       <Bio />
-      {/* <ProjectList list={getProjectsByPosts(posts)} /> */}
 
       <Wrapper>
         <h2>All Posts</h2>
@@ -99,6 +75,13 @@ export const pageQuery = graphql`
             title
             description
             project
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

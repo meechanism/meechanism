@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
+import MediaQuery from "../utils/mediaQuery"
 import Colors from "../components/colors"
 
 // Plain card
@@ -15,9 +16,14 @@ export default styled.div`
   h4 {
     margin-top: 0;
   }
+
   &:hover {
     background: ${props => (props.linked ? Colors.white : Colors.gray1)};
   }
+
+  ${MediaQuery.small`
+    padding: ${rhythm(0.5)};
+  `};
 `
 
 // Useful for shortened blog posts that link to the whole article
@@ -51,4 +57,9 @@ export const LinkedCard = styled.div`
       color: ${Colors.primary};
     }`}
   }
+
+  ${MediaQuery.small`
+    padding: ${rhythm(0.5)};
+    font-size: ${rhythm(0.5)};
+  `};
 `

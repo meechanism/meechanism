@@ -3,6 +3,7 @@ title: On fear and failure
 date: "2020-01-20T22:12:03.284Z"
 project: life
 tags: ["life", "career", "interview"]
+featuredImage: ./falling.jpg
 ---
 
 I've been holding myself back for a while now. Maybe for a decade? Perhaps my whole professional career.

@@ -3,6 +3,7 @@ title: Secrets to a Green Thumb
 date: "2020-05-14T22:12:03.284Z"
 project: plants
 tags: ["plants", "learning"]
+featuredImage: ./planters.jpg
 ---
 
 A person with a green thumb is defined to be someone excellent at taking care of plants. They have an uncanny ability to help plants thrive and do their best.

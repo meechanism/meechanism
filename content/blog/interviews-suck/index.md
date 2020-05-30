@@ -4,6 +4,7 @@ date: "2020-02-12T23:46:37.121Z"
 description: "Software engineering interview pains"
 project: code
 tags: ["career", "learning", "interview"]
+featuredImage: ./whiteboard.jpg
 ---
 
 I'm convinced no one likes interviews. Candidates dread it. Interviewers, hiring managers, and companies don't like wasting time, especially if the candidate is lacking.

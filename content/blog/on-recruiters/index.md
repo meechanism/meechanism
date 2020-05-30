@@ -3,6 +3,7 @@ title: On Recruiters
 date: "2020-02-17T22:12:03.284Z"
 project: code
 tags: ["work", "career", "interview"]
+featuredImage: ./questions.jpg
 ---
 
 Early on in my recent job search, I finally decided to respond to a recruiter. For the sake of this article, let's called her Tiffany (not her real name) from JobCo (also not the recruiting firm's name). I never worked with a recruiting firm before so I didn't know what to expect. I've heard a mixture and tidbits of good and bad stories, but I never understood them. Queue cautious start.

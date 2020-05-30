@@ -4,6 +4,7 @@ date: "2019-12-18T23:46:37.121Z"
 description: "Sharing my routine of planning my travels"
 project: travel
 tags: ["trips", "planning"]
+featuredImage: ./assets/journal.jpg
 ---
 
 <figure>
@@ -72,6 +73,7 @@ You can usually do this on their online portals and select which dates you plan 
 ## #4 Currency Exchange
 
 There are a couple of important notes here:
+
 - Determine if the area you are visiting is a cash-economy (meaning most places accept cash). Japan, for example, is a cash economy. A lot of places in very urban areas like Tokyo and Kyoto will accept credit cards, but as soon as you go out into the suburban or rural areas (highly recommend), then you will start seeing that cash is required.
 - See if it makes more sense to exchange domestically or internationally. You might be able to save some money.
 
@@ -109,7 +111,6 @@ Good questions to ask yourself:
   <img src="./assets/glencoe.jpg" alt="Glencoe's glow">
   <figcaption>We took a tour bus through the Scottish Highlands and never expected to have our breaths taken away. Dec 7, 2017</figcaption>
 </figure>
-
 
 ---
 

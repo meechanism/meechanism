@@ -3,6 +3,7 @@ title: Making my own watercolor palette
 date: "2019-02-15T22:12:03.284Z"
 project: art
 tags: ["learning", "diy", "art", "watercolor"]
+featuredImage: ./assets/watercolors-tin-tubes.jpg
 ---
 
 ![Watercolor palettes](./assets/palettes.jpg)

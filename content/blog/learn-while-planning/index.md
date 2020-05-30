@@ -4,6 +4,7 @@ date: "2019-11-16T23:46:37.121Z"
 description: "Some new terminology I encountered while prepping for my next trip."
 project: travel
 tags: ["education", "planning"]
+featuredImage: ./glencoe.jpg
 ---
 
 I have a trip planned to explore more of the Scottish Highlands next year (2020). I've been itching to return

@@ -110,7 +110,7 @@ const IndexPage = props => {
             textAlign="center"
             margin={`0 ${rhythm(1 / 2)} ${rhythm(1 / 2)}`}
           >
-            <HeroSubtext>Art</HeroSubtext>
+            <HeroSubtext>Art/Craft</HeroSubtext>
             <Image
               fluid={data.gingko.childImageSharp.fluid}
               alt={`Gingko watercolor`}
@@ -211,6 +211,13 @@ export const pageQuery = graphql`
             title
             description
             project
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

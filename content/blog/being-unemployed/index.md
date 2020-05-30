@@ -3,6 +3,7 @@ title: Being Unemployed
 date: "2020-01-06T22:12:03.284Z"
 project: life
 tags: ["career", "life"]
+featuredImage: ./silhouette-of-mountains.jpg
 ---
 
 I'm currently unemployed (spoiler alert: Silicon Valley tech company meltdown).
@@ -31,7 +32,7 @@ There was time to write. I got more time to learn photography. I intimately hung
 
 And most importantly, it allowed me the chance to think clearly about my values and priorities. It got me wondering; _work truly sucks_.
 
-I understand some people find work fulfilling, as it may be one of the core pillars of their values and definitions of success.  But for me, I don't want to work for the sake of making a living. That sounds like a waste of life. I want to work for meaning. I want to work for something impactful. The way I have been working just hasn't been... working for me.
+I understand some people find work fulfilling, as it may be one of the core pillars of their values and definitions of success. But for me, I don't want to work for the sake of making a living. That sounds like a waste of life. I want to work for meaning. I want to work for something impactful. The way I have been working just hasn't been... working for me.
 
 <figure>
   <img src="./blue-blur-color-dark.jpg" alt="Deep dark blue sea">

@@ -3,6 +3,7 @@ title: Do I even photography?
 date: "2019-12-30T22:12:03.284Z"
 project: art
 tags: ["photography", "learning"]
+featuredImage: ./mee-camera.jpg
 ---
 
 I've had the itch to learn photography for over a decade. Let's be clear, I take photos of food pretty often on my phone, but that's just for plain old fun. The type of photography I'm talking about is the real deal, the stuff you see in magazines, the stuff you pay people for when you need to look really good.
@@ -47,11 +48,13 @@ A week before my trip, I sat down with my boyfriend to go through some photograp
 There are three key elements in the triangle of exposure: ISO, aperture, and shutter speed. Finding a balance in these will help determine the quality of your image capture.
 
 #### ISO (International Organization of Standardization):
+
 - Measures the sensitivity of the image sensor
 - Lower ISO = less sensitive to light (finer grains)
 - Higher ISO = more sensitive to light (coarse grains)
 
 #### Aperture
+
 - Measures the opening of a lense's diaphragm through which light passes. I think of it as an eye's iris dilating and contracting.
 - Measured with an f-number (or f/stop) to express the size of the lens opening
 - Lower f/stop = more exposure (larger aperture)
@@ -64,10 +67,12 @@ There are three key elements in the triangle of exposure: ISO, aperture, and shu
 </figure>
 
 #### Shutter speed
+
 - Measures the amount of time the shutter is open, which allows light to hit the camera's sensor or film.
 - A long (slow) shutter speed allows the lens to record more light, increasing the exposure time.
 
 ## Notes on harmonies with shutter speeds
+
 - Use a low ISO to capture more light without slowing down the shutter speed or opening up the aperture.
 - Use a high ISO to enable faster shutter speeds to freeze the movement of your subject.
 - Stopping down (reducing aperture) reduces the amount of light entering the lens, which will require a longer (slower) shutter speed to capture an image.
@@ -80,45 +85,49 @@ These are some rules I learned from my session with Anthony. Some are simpler to
 
 1. BALANCE: Balance the weight of your subject by including other elements.
 
-1. LEADING LINES:  guide the viewer’s eye through an image. It helps draw focal points.
-    <figure>
-    <img src="./chinatown-road.JPG" alt="A road off of Chinatown">
-    <figcaption>A road off of China Town. Ferry Building in the distance. Dec 2019</figcaption>
-    </figure>
+1. LEADING LINES: guide the viewer’s eye through an image. It helps draw focal points.
+
+   <figure>
+   <img src="./chinatown-road.JPG" alt="A road off of Chinatown">
+   <figcaption>A road off of China Town. Ferry Building in the distance. Dec 2019</figcaption>
+   </figure>
 
 1. VIEWPOINTS: to impact your composition with multiple points of interest.
 
 1. BACKGROUND: compose your shot so it doesn’t distract or detract from your subject.
 
 1. SYMMETRY & PATTERNS: both natural and man-made can make for very eye-catching compositions.
-    <figure>
-    <img src="./450sutter-reflection.jpg" alt="450 Sutter building ceiling">
-    <figcaption>Reflection of <a href="http://www.450sutter.com/">450 Sutter</a> ceiling details, Dec 2019</figcaption>
-    </figure>
+
+   <figure>
+   <img src="./450sutter-reflection.jpg" alt="450 Sutter building ceiling">
+   <figcaption>Reflection of <a href="http://www.450sutter.com/">450 Sutter</a> ceiling details, Dec 2019</figcaption>
+   </figure>
 
 1. DEPTH: include objects in the foreground, middle ground, and background.
-    <figure>
-    <img src="./xmas-market.JPG" alt="Christmas market line">
-    <figcaption>Vancouver Christmas market line, Dec 2019</figcaption>
-    </figure>
+
+   <figure>
+   <img src="./xmas-market.JPG" alt="Christmas market line">
+   <figcaption>Vancouver Christmas market line, Dec 2019</figcaption>
+   </figure>
 
 1. FRAMES: isolate the main subject with a frame around the edge of your composition.
-    <figure>
-    <img src="./transamerica.JPG" alt="Transamerica building">
-    <figcaption>Transamerica building framed by trees, Dec 2019</figcaption>
-    </figure>
+
+   <figure>
+   <img src="./transamerica.JPG" alt="Transamerica building">
+   <figcaption>Transamerica building framed by trees, Dec 2019</figcaption>
+   </figure>
 
 1. CROP: shoot or cut tight around the subject to eliminate background noise.
 
-    <figure>
-    <img src="./red-buildings.JPG" alt="Red buildings">
-    <figcaption>Red buildings, edge of Chinatown, Dec 2019</figcaption>
-    </figure>
+   <figure>
+   <img src="./red-buildings.JPG" alt="Red buildings">
+   <figcaption>Red buildings, edge of Chinatown, Dec 2019</figcaption>
+   </figure>
 
-    <figure>
-    <img src="./red-buildings-cropped.JPG" alt="Cropped red buildings">
-    <figcaption>Cropped gingko tree out of red buildings photo, Dec 2019</figcaption>
-    </figure>
+   <figure>
+   <img src="./red-buildings-cropped.JPG" alt="Cropped red buildings">
+   <figcaption>Cropped gingko tree out of red buildings photo, Dec 2019</figcaption>
+   </figure>
 
 1. Experiment and have fun!
 
@@ -130,9 +139,9 @@ During my time shooting in the city, I learned of a neat challenge to help me fo
 
 I forgot the name of the challenge (maybe it was 2x20?), but these were the goals:
 
-1) Pick one subject.
-2) Shoot for 2 minutes.
-2) Get at least 20 compositions.
+1. Pick one subject.
+2. Shoot for 2 minutes.
+3. Get at least 20 compositions.
 
 To get different compositions, you can shoot for scale (small/medium/large, up close, from afar), from different angles (top, level, below, side), abstractly (zoom in, capture the space around/between the subject), move several feet to the left/right, and etc. The idea is to keep moving and keep shooting.
 

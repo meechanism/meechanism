@@ -3,6 +3,7 @@ title: Addressing Front-End Pipeline Frustrations
 date: "2018-05-01T22:12:03.284Z"
 project: code
 tags: ["work"]
+featuredImage: ./teamwork.jpg
 ---
 
 My entrance to the engineering team was a bit non-standard. I joined the organization as a front-end developer on the Customer Experience (CX) team with the hopes of creating and maintaining the component library for engineering to use.
