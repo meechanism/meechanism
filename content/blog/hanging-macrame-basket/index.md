@@ -1,9 +1,8 @@
 ---
-title: Hanging Basket
-tags: ["macrame", "plant hanger", "basket"]
+title: Hanging Macrame Basket
+tags: ["macrame", "planter", "basket"]
 date: "2020-05-18T22:12:03.284Z"
-description: Wall hanging basket
-type: project
+# type: project
 featuredImage: "./images/hanging09.jpg"
 ---
 

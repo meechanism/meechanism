@@ -1,5 +1,5 @@
 ---
-title: Macrame plant hangers
+title: Macrame
 tags: ["macrame", "plant hanger"]
 # featuredImage: './assets/gingko-series.jpg'
 description: Making macrame plant hangers for my plant
@@ -21,4 +21,4 @@ Note: these are non-affiliate links. I don't get anything for sharing the links 
 
 ## Crafts
 
-- [Hanging Basket](./hanging)
+- [Hanging Macrame Basket](../../../blog/hanging-macrame-basket)
