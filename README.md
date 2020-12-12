@@ -2,6 +2,8 @@
   🌈 Mee's personal website 🌝
 </h1>
 
+Hello!
+
 Learn more about Mee at [meechanism.com](https://meechanism.com)!
 
 Built with: [Gatsby](https://www.gatsbyjs.org), [React](https://reactjs.org), and [Styled Components](https://www.styled-components.com/).
