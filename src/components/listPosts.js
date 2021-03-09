@@ -52,7 +52,7 @@ const ListPosts = ({ data, label = "Related blog posts" }) => {
           return (
             <List.Li key={edge.node.fields.slug}>
               <Meta>{meta}</Meta>{" "}
-              <Link to={`${mappedUrl}${edge.node.fields.slug}`}>
+              <Link to={`/${mappedUrl}${edge.node.fields.slug}`}>
                 {edge.node.frontmatter.title}
               </Link>
             </List.Li>

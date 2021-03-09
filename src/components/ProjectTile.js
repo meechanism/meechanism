@@ -51,7 +51,7 @@ const Details = styled.div`
 // passing in data for now. https://github.com/gatsbyjs/gatsby/issues/10482
 const ProjectTile = ({ data }) => {
   return (
-    <Link to={`projects${data.fields.slug}`} key={data.fields.slug}>
+    <Link to={`/projects${data.fields.slug}`} key={data.fields.slug}>
       <Wrapper>
         {data.frontmatter.featuredImage && (
           <ImgWrapper>

@@ -47,7 +47,7 @@ const ALL_PROJECTS = [
 
 const Project = ({ project }) => {
   return (
-    <Link to={`projects/${project.path}/`}>
+    <Link to={`${project.path}/`}>
       <Card linked>
         <Title>{project.title}</Title>
         <Desc>{project.description}</Desc>

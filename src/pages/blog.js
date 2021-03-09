@@ -36,7 +36,7 @@ const Blog = props => {
 
       <Wrapper>
         <h2>All Posts</h2>
-        <Link to="tags">
+        <Link to="/tags">
           <Button>View all tags</Button>
         </Link>
       </Wrapper>
